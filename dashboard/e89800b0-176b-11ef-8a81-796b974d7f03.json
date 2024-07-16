@@ -3322,8 +3322,8 @@
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
-                "margin" : 1,
-                "outerMargin" : true,
+                "margin" : 0,
+                "outerMargin" : false,
                 "backgroundSizeMode" : "100%",
                 "autoFillHeight" : false,
                 "backgroundImageUrl" : null,
