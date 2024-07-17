@@ -3287,7 +3287,7 @@
             "main" : {
               "widgets" : {
                 "a2487dca-2519-923b-63b0-086d190be70f" : {
-                  "sizeX" : 21,
+                  "sizeX" : 17,
                   "sizeY" : 11,
                   "row" : 0,
                   "col" : 7
@@ -3304,7 +3304,11 @@
                 "columns" : 24,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : false,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
