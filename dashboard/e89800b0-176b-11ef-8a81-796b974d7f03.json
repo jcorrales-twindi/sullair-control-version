@@ -1555,7 +1555,7 @@
               "zoomOnClick" : true,
               "maxZoom" : 6,
               "maxClusterRadius" : 50,
-              "animate" : true,
+              "animate" : false,
               "spiderfyOnMaxZoom" : true,
               "showCoverageOnHover" : true,
               "chunkedLoading" : true,
