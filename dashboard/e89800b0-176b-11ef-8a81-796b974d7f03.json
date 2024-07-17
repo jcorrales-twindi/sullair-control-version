@@ -1481,6 +1481,7 @@
               "lngKeyName" : "longitude",
               "xPosKeyName" : "xPos",
               "yPosKeyName" : "yPos",
+              "defaultCenterPosition" : "-63,-23",
               "disableScrollZooming" : false,
               "disableDoubleClickZooming" : false,
               "disableZoomControl" : false,
