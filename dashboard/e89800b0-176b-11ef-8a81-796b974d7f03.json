@@ -1556,10 +1556,10 @@
               "maxZoom" : 6,
               "maxClusterRadius" : 50,
               "animate" : true,
-              "spiderfyOnMaxZoom" : false,
+              "spiderfyOnMaxZoom" : true,
               "showCoverageOnHover" : true,
-              "chunkedLoading" : false,
-              "removeOutsideVisibleBounds" : false,
+              "chunkedLoading" : true,
+              "removeOutsideVisibleBounds" : true,
               "useIconCreateFunction" : true,
               "clusterMarkerFunction" : "let customColor;\r\n/*for (let markerData of data) {\r\n    if(markerData.temperature > 40) {\r\n        customColor = '#9054ff'\r\n        break\r\n    }\r\n}*/\r\nreturn customColor ? customColor : '#7072ff'"
             },
