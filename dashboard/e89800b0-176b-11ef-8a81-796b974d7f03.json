@@ -1427,6 +1427,19 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
+              }, {
+                "name" : "isOnlySelected",
+                "type" : "attribute",
+                "label" : "isOnlySelected",
+                "color" : "#009688",
+                "settings" : { },
+                "_hash" : 0.8907477788110824,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return true;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
