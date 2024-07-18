@@ -6832,7 +6832,7 @@
       },
       "states" : {
         "default" : {
-          "name" : "Dashboard de Estado de Dispositivos",
+          "name" : "Dashboard de Estado",
           "root" : true,
           "layouts" : {
             "main" : {
