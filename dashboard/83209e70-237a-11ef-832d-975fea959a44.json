@@ -8012,9 +8012,9 @@
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "Dashboard de Estado de Dispositivos",
+    "name" : "Dashboard de Estado",
     "ownerId" : null,
-    "title" : "Dashboard de Estado de Dispositivos"
+    "title" : "Dashboard de Estado"
   },
   "attributes" : {
     "SERVER_SCOPE" : [ ]
