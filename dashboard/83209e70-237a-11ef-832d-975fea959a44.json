@@ -6782,7 +6782,8 @@
               "borderWidth" : 5,
               "borderColor" : "#fff",
               "legend" : {
-                "display" : false
+                "display" : true,
+                "labelsFontColor" : null
               }
             },
             "title" : "DISPOSITIVOS TOTALES",
