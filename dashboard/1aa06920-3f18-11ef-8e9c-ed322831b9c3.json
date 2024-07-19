@@ -2899,7 +2899,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : null,
-              "entityAliasId" : "76a00318-874f-227a-cd4b-d81a7f8f1a6c",
+              "entityAliasId" : "84d73d85-2b90-ae90-51ba-393226cc1508",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "name",
@@ -3544,6 +3544,26 @@
               "entityType" : "TENANT",
               "id" : "7f7de250-2fb0-11ee-bf45-a1705d89a055"
             }
+          }
+        },
+        "84d73d85-2b90-ae90-51ba-393226cc1508" : {
+          "id" : "84d73d85-2b90-ae90-51ba-393226cc1508",
+          "alias" : "Hierarchy Beta",
+          "filter" : {
+            "type" : "assetSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : {
+              "entityType" : "CURRENT_USER",
+              "id" : null
+            },
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "fetchLastLevelOnly" : false,
+            "relationType" : null,
+            "assetTypes" : [ "flota-raiz" ]
           }
         }
       },
