@@ -3425,7 +3425,10 @@
             "resolveMultiple" : true,
             "rootStateEntity" : true,
             "stateEntityParamName" : "data_map",
-            "defaultStateEntity" : null,
+            "defaultStateEntity" : {
+              "entityType" : "ASSET",
+              "id" : "66c93d30-177d-11ef-8a81-796b974d7f03"
+            },
             "rootEntity" : null,
             "direction" : "FROM",
             "maxLevel" : 4,
