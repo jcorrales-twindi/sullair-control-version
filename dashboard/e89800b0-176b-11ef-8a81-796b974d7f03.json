@@ -2890,9 +2890,9 @@
               "entityAliasId" : "6cc30c8f-01d7-835c-9a45-25d0198ec8d1",
               "filterId" : "2ee511d4-4bb1-9250-3c88-44f2accf70c6",
               "dataKeys" : [ {
-                "name" : "ExtPowInputQualifiedValue",
+                "name" : "Binary1QualifiedInput",
                 "type" : "timeseries",
-                "label" : "ExtPowInputQualifiedValue",
+                "label" : "Binary1QualifiedInput",
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.8717718722418522,
@@ -2901,7 +2901,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value==='ON';"
+                "postFuncBody" : "return value===1;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
