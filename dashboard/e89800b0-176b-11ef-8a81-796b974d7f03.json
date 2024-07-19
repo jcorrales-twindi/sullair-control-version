@@ -2708,6 +2708,26 @@
                 "funcBody" : null,
                 "usePostProcessing" : true,
                 "postFuncBody" : "return 6;"
+              }, {
+                "name" : "DataOrigin",
+                "type" : "attribute",
+                "label" : "DataOrigin",
+                "color" : "#e91e63",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false,
+                  "defaultColumnVisibility" : "hidden",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.5960319847182425,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
