@@ -3550,20 +3550,10 @@
           "id" : "84d73d85-2b90-ae90-51ba-393226cc1508",
           "alias" : "Hierarchy Beta",
           "filter" : {
-            "type" : "assetSearchQuery",
+            "type" : "assetType",
             "resolveMultiple" : true,
-            "rootStateEntity" : false,
-            "stateEntityParamName" : null,
-            "defaultStateEntity" : null,
-            "rootEntity" : {
-              "entityType" : "CURRENT_CUSTOMER",
-              "id" : "96ecfe70-3947-11ef-8e9c-ed322831b9c3"
-            },
-            "direction" : "FROM",
-            "maxLevel" : 1,
-            "fetchLastLevelOnly" : false,
-            "relationType" : null,
-            "assetTypes" : [ "flota-raiz" ]
+            "assetTypes" : [ "flota-raiz" ],
+            "assetNameFilter" : ""
           }
         }
       },
