@@ -3044,7 +3044,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : true,
-              "markdownTextFunction" : "const objOnOff = {\n    GT1030:true,\n    GT1200:true\n}\n\nconst isOnOffChart = objOnOff[data[0].DataOrigin]; \n\nconst dashboardState = `<tb-dashboard-state class=\"tables-att\" fxFlex [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=${isOnOffChart?\"chart_utilization_on_off\":\"chart_utilization_cumulative\"}></tb-dashboard-state>`\n\nreturn `<div fxFlex fxLayout=\"column\" style=\"width: 100%; height: 100%; padding: 0;\">\n        ${dashboardState}\n    </div>`;",
+              "markdownTextFunction" : "const objOnOff = {\n    GT1030:true,\n    GT1200:true,\n    OrbcommDeviceCloudConsumer:true\n}\n\nconst isOnOffChart = objOnOff[data[0].DataOrigin]; \n\nconst dashboardState = `<tb-dashboard-state class=\"tables-att\" fxFlex [ctx]=\"ctx\" [syncParentStateParams]=\"true\" stateId=${isOnOffChart?\"chart_utilization_on_off\":\"chart_utilization_cumulative\"}></tb-dashboard-state>`\n\nreturn `<div fxFlex fxLayout=\"column\" style=\"width: 100%; height: 100%; padding: 0;\">\n        ${dashboardState}\n    </div>`;",
               "applyDefaultMarkdownStyle" : true
             },
             "title" : "New Markdown/HTML Card",
