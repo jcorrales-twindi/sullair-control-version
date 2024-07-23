@@ -206,68 +206,40 @@
           "col" : 0,
           "id" : "6d9066b3-0658-2b36-61f7-799aab109332"
         },
-        "a86b4a37-8789-26b4-a182-5aa2e6a5c0fb" : {
+        "1ca6e4ae-b106-045b-686f-07394ba03065" : {
           "isSystemType" : true,
-          "bundleAlias" : "scheduling",
-          "typeAlias" : "reports_schedule",
+          "bundleAlias" : "home_page_widgets",
+          "typeAlias" : "quick_links",
           "type" : "static",
           "title" : "New widget",
           "image" : null,
           "description" : null,
           "sizeX" : 7.5,
-          "sizeY" : 4.5,
+          "sizeY" : 3,
           "config" : {
-            "timewindow" : {
-              "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 86400000
-              },
-              "aggregation" : {
-                "type" : "NONE",
-                "limit" : 200
-              }
-            },
             "showTitle" : false,
             "backgroundColor" : "rgb(255, 255, 255)",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "4px",
+            "padding" : "8px",
             "settings" : {
-              "title" : "Reports schedule",
-              "displayCreatedTime" : false,
-              "displayType" : false,
-              "displayCustomer" : true,
-              "displayPagination" : true,
-              "defaultPageSize" : 10,
-              "defaultSortOrder" : "name",
-              "enabledViews" : "both",
-              "forceDefaultEventType" : "generateReport",
-              "customEventTypes" : [ ]
+              "columns" : 3
             },
-            "title" : "Reports schedule",
+            "title" : "New Quick links",
             "dropShadow" : true,
             "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400,
-              "padding" : "5px 10px 5px 10px"
-            },
-            "useDashboardTimewindow" : false,
-            "showLegend" : false,
-            "datasources" : [ ],
-            "enableDataExport" : true,
             "widgetStyle" : {
               "borderRadius" : ".75rem"
             },
-            "actions" : { },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "showLegend" : false,
+            "datasources" : [ ],
+            "enableDataExport" : true
           },
           "row" : 0,
           "col" : 0,
-          "id" : "a86b4a37-8789-26b4-a182-5aa2e6a5c0fb"
+          "id" : "1ca6e4ae-b106-045b-686f-07394ba03065"
         }
       },
       "states" : {
@@ -295,9 +267,9 @@
                   "row" : 1,
                   "col" : 10
                 },
-                "a86b4a37-8789-26b4-a182-5aa2e6a5c0fb" : {
+                "1ca6e4ae-b106-045b-686f-07394ba03065" : {
                   "sizeX" : 9,
-                  "sizeY" : 10,
+                  "sizeY" : 4,
                   "row" : 1,
                   "col" : 15
                 }
