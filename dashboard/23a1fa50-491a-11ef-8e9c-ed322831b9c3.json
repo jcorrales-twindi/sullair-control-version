@@ -222,7 +222,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "columns" : 3
+              "columns" : 2
             },
             "title" : "New Quick links",
             "dropShadow" : true,
@@ -256,7 +256,7 @@
                   "col" : 0
                 },
                 "515b8bb4-cf42-1bb2-1e94-3fe6469e6362" : {
-                  "sizeX" : 10,
+                  "sizeX" : 13,
                   "sizeY" : 4,
                   "row" : 1,
                   "col" : 0
@@ -265,13 +265,13 @@
                   "sizeX" : 5,
                   "sizeY" : 4,
                   "row" : 1,
-                  "col" : 10
+                  "col" : 19
                 },
                 "1ca6e4ae-b106-045b-686f-07394ba03065" : {
-                  "sizeX" : 9,
+                  "sizeX" : 6,
                   "sizeY" : 4,
                   "row" : 1,
-                  "col" : 15
+                  "col" : 13
                 }
               },
               "gridSettings" : {
