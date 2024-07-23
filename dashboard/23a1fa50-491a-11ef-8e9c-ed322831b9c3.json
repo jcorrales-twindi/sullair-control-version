@@ -1,0 +1,24 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : ""
+    },
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "23a1fa50-491a-11ef-8e9c-ed322831b9c3"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "Tenant Home",
+    "ownerId" : null,
+    "title" : "Tenant Home"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
