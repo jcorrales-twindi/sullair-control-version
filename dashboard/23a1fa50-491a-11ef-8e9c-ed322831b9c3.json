@@ -109,8 +109,8 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "cardHtml" : "<div class='nav-links'>\n    \n    <a href=\"/dashboards/all/e89800b0-176b-11ef-8a81-796b974d7f03\">\n        <img src=\"https://qr.twindimension.com/icons/svg/map.svg\"/>\n        <p>Mapa</p>\n    </a>\n    \n    <a href=\"/dashboards/all/e89800b0-176b-11ef-8a81-796b974d7f03?state=W3siaWQiOiJkZWZhdWx0IiwicGFyYW1zIjp7ImRlZmF1bHRWaWV3IjoicmVwb3J0In19XQ%253D%253D\">\n        <img src=\"https://qr.twindimension.com/icons/svg/report.svg\"/>\n        <p>Reportes</p>\n    </a>\n    \n    <a href=\"/dashboards/all/83209e70-237a-11ef-832d-975fea959a44\">\n        <img src=\"https://qr.twindimension.com/icons/svg/monitoring.svg\"/>\n        <p>Estado</p>\n    </a>\n    \n</div>",
-              "cardCss" : ".nav-links {\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: space-around;\n    padding: 10px;\n}\n\n.nav-links a { \n    border: none; \n    padding-top: 1rem;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n\n.nav-links a p {\n    font-size: 1rem;\n    margin: 0;\n}\n\n.nav-links a img {\n    user-select: none;\n    background-repeat: no-repeat;\n    display: inline-block;\n    fill: currentColor;\n    height: 90px;\n    width: 90px;\n    overflow: hidden;\n    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));\n}"
+              "cardHtml" : "<div class='nav-links'>\n    <button id='view_map' mat-icon-button color=\"primary\" matTooltip=\"Monitoreo\" >\n        <img src=\"https://qr.twindimension.com/icons/svg/map.svg\"/>\n        <p>Monitoreo</p>\n    </button>\n    <button id='view_report' mat-icon-button color=\"primary\" matTooltip=\"Reportes\" >\n        <img src=\"https://qr.twindimension.com/icons/svg/report.svg\"/>\n        <p>Reportes</p>\n    </button>\n    <button id='view_status' mat-icon-button color=\"primary\" matTooltip=\"Estado de dispositivos\" >\n        <img src=\"https://qr.twindimension.com/icons/svg/monitoring.svg\"/>\n        <p>Estado de dispositivos</p>\n    </button>\n</div>",
+              "cardCss" : ".nav-links {\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: space-around;\n    padding: 10px;\n}\n\n.nav-links button { \n    border: none; \n    background: transparent;\n    padding-top: 1rem;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n\n.nav-links button p {\n    font-size: 1rem;\n    margin: 0;\n}\n\n.nav-links button img {\n    user-select: none;\n    background-repeat: no-repeat;\n    display: inline-block;\n    fill: currentColor;\n    height: 90px;\n    width: 90px;\n    overflow: hidden;\n    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));\n}"
             },
             "title" : "Nav Links",
             "dropShadow" : true,
@@ -122,7 +122,52 @@
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
-            "showLegend" : false
+            "showLegend" : false,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "view_status",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboard",
+                "targetDashboardStateId" : null,
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : false,
+                "targetDashboardId" : "83209e70-237a-11ef-832d-975fea959a44",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "1257f267-dbc5-b692-2337-d7ca4a47e78f"
+              }, {
+                "name" : "view_map",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboard",
+                "targetDashboardStateId" : null,
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : false,
+                "targetDashboardId" : "e89800b0-176b-11ef-8a81-796b974d7f03",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "28ea7e9a-b4f8-946e-7993-b9d79ecca7c0"
+              }, {
+                "name" : "view_report",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboard",
+                "targetDashboardStateId" : "view_report",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openNewBrowserTab" : false,
+                "targetDashboardId" : "e89800b0-176b-11ef-8a81-796b974d7f03",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "4c13e2e7-8336-4296-c3ca-e3e8d468233a"
+              } ]
+            }
           },
           "row" : 0,
           "col" : 0,
@@ -146,7 +191,7 @@
                   "sizeX" : 13,
                   "sizeY" : 5,
                   "row" : 2,
-                  "col" : 7
+                  "col" : 0
                 }
               },
               "gridSettings" : {
