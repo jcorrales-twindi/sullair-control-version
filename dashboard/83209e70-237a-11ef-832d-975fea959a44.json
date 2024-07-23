@@ -6997,7 +6997,7 @@
                 "limit" : 25000
               }
             },
-            "showTitle" : true,
+            "showTitle" : false,
             "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
@@ -7020,7 +7020,9 @@
             "showTitleIcon" : false,
             "titleTooltip" : "",
             "enableDataExport" : false,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "borderRadius" : "1.0rem"
+            },
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
