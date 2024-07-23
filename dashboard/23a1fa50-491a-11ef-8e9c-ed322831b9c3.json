@@ -167,7 +167,7 @@
                 "openInPopover" : false,
                 "id" : "4c13e2e7-8336-4296-c3ca-e3e8d468233a"
               }, {
-                "name" : "view_central",
+                "name" : "view_tcentral",
                 "icon" : "more_horiz",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
