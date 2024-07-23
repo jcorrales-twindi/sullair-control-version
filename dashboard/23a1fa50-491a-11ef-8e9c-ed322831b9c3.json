@@ -67,7 +67,7 @@
             },
             "title" : "New HTML Value Card",
             "dropShadow" : false,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "widgetStyle" : {
               "borderRadius" : ".75rem"
             },
@@ -114,7 +114,7 @@
             },
             "title" : "Navigation Links",
             "dropShadow" : true,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "enableDataExport" : true,
             "widgetStyle" : {
               "borderRadius" : ".75rem"
