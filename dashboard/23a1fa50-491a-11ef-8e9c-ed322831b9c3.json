@@ -221,7 +221,7 @@
                   "col" : 0
                 },
                 "515b8bb4-cf42-1bb2-1e94-3fe6469e6362" : {
-                  "sizeX" : 10,
+                  "sizeX" : 11,
                   "sizeY" : 4,
                   "row" : 1,
                   "col" : 0
@@ -230,7 +230,7 @@
                   "sizeX" : 5,
                   "sizeY" : 4,
                   "row" : 1,
-                  "col" : 10
+                  "col" : 11
                 }
               },
               "gridSettings" : {
