@@ -6892,10 +6892,16 @@
               "dataKeys" : [ {
                 "name" : "count",
                 "type" : "count",
-                "label" : "count 6",
+                "label" : "Komatsu",
                 "color" : "#9c27b0",
                 "settings" : { },
-                "_hash" : 0.1693816125230856
+                "_hash" : 0.1693816125230856,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -6908,10 +6914,16 @@
               "dataKeys" : [ {
                 "name" : "count",
                 "type" : "count",
-                "label" : "count 5",
-                "color" : "#607d8b",
+                "label" : "JCB",
+                "color" : "#3F51B5",
                 "settings" : { },
-                "_hash" : 0.2465300878080936
+                "_hash" : 0.2465300878080936,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -6924,10 +6936,16 @@
               "dataKeys" : [ {
                 "name" : "count",
                 "type" : "count",
-                "label" : "count 4",
+                "label" : "Volvo",
                 "color" : "#ffc107",
                 "settings" : { },
-                "_hash" : 0.9039636352575644
+                "_hash" : 0.9039636352575644,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -6940,10 +6958,16 @@
               "dataKeys" : [ {
                 "name" : "count",
                 "type" : "count",
-                "label" : "count 3",
-                "color" : "#f44336",
+                "label" : "MicroTRACK",
+                "color" : "#00BCD4",
                 "settings" : { },
-                "_hash" : 0.610235072723295
+                "_hash" : 0.610235072723295,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
