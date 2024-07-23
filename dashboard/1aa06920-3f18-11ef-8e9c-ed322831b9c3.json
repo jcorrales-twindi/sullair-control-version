@@ -3548,7 +3548,7 @@
         },
         "84d73d85-2b90-ae90-51ba-393226cc1508" : {
           "id" : "84d73d85-2b90-ae90-51ba-393226cc1508",
-          "alias" : "Hierarchy Beta",
+          "alias" : "Hierarchy Multiple",
           "filter" : {
             "type" : "assetType",
             "resolveMultiple" : true,
