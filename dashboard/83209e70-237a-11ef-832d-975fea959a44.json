@@ -6782,8 +6782,7 @@
               "borderWidth" : 5,
               "borderColor" : "#fff",
               "legend" : {
-                "display" : true,
-                "labelsFontColor" : null
+                "display" : false
               }
             },
             "title" : "New doughnut custom",
