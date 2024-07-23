@@ -110,7 +110,7 @@
             "padding" : "8px",
             "settings" : {
               "cardHtml" : "<div class='nav-links'>\n    \n    <a href=\"/dashboards/all/e89800b0-176b-11ef-8a81-796b974d7f03\">\n        <img src=\"https://qr.twindimension.com/icons/svg/map.svg\"/>\n        <p>Mapa</p>\n    </a>\n    \n    <a href=\"/dashboards/all/e89800b0-176b-11ef-8a81-796b974d7f03?state=W3siaWQiOiJkZWZhdWx0IiwicGFyYW1zIjp7ImRlZmF1bHRWaWV3IjoicmVwb3J0In19XQ%253D%253D\">\n        <img src=\"https://qr.twindimension.com/icons/svg/report.svg\"/>\n        <p>Reportes</p>\n    </a>\n    \n    <a href=\"/dashboards/all/83209e70-237a-11ef-832d-975fea959a44\">\n        <img src=\"https://qr.twindimension.com/icons/svg/monitoring.svg\"/>\n        <p>Estado</p>\n    </a>\n    \n</div>",
-              "cardCss" : ".nav-links {\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: space-around;\n    padding: 10px;\n}\n\n.nav-links a { \n    border: none; \n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n\n.nav-links a p {\n    font-size: 1rem;\n}\n\n.nav-links a img {\n    user-select: none;\n    background-repeat: no-repeat;\n    display: inline-block;\n    fill: currentColor;\n    height: 90px;\n    width: 90px;\n    overflow: hidden;\n    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));\n}"
+              "cardCss" : ".nav-links {\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: space-around;\n    padding: 10px;\n    padding-top: 20px;\n}\n\n.nav-links a { \n    border: none; \n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n\n.nav-links a p {\n    font-size: 1rem;\n}\n\n.nav-links a img {\n    user-select: none;\n    background-repeat: no-repeat;\n    display: inline-block;\n    fill: currentColor;\n    height: 90px;\n    width: 90px;\n    overflow: hidden;\n    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));\n}"
             },
             "title" : "Nav Links",
             "dropShadow" : true,
@@ -144,7 +144,7 @@
                 },
                 "515b8bb4-cf42-1bb2-1e94-3fe6469e6362" : {
                   "sizeX" : 13,
-                  "sizeY" : 5,
+                  "sizeY" : 6,
                   "row" : 2,
                   "col" : 0
                 }
