@@ -7037,7 +7037,27 @@
               "showTotal" : false,
               "showLatest" : false
             },
-            "useDashboardTimewindow" : true
+            "useDashboardTimewindow" : true,
+            "actions" : {
+              "headerButton" : [ {
+                "name" : "Total de Equipos",
+                "icon" : "list",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "total_de_equipos",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "dialogTitle" : "",
+                "dialogHideDashboardToolbar" : true,
+                "dialogWidth" : 80,
+                "dialogHeight" : 90,
+                "openInSeparateDialog" : true,
+                "openInPopover" : false,
+                "id" : "6723d375-7bc1-3df4-e841-ce4261324337"
+              } ]
+            }
           },
           "row" : 0,
           "col" : 0,
