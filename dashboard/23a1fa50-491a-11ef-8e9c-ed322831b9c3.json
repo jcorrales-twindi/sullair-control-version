@@ -27,7 +27,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "cardHtml" : "<div class='card'>Welcome <span id=\"welcome-fullname\"></span></div>\n<script defer>\n    const firstName = self.ctx.currentUser.firstName;\n    const lastName = self.ctx.currentUser.lastName;\n    const email = self.ctx.currentUser.sub;\n    const tenantId = self.ctx.currentUser.tenantId;\n    \n    console.log({firstName, lastName, email, tenantId})\n    const fullName = firstName + ' ' + lastName\n    const welcomeName = fullName.trim() ? fullName : email\n    document.getElementById(\"welcome-fullname\").textContent = firstName .' '. lastName\n</script>",
+              "cardHtml" : "<div class='card'>Welcome <span id=\"welcome-fullname\"></span></div>\n<script defer>\n    const firstName = self.ctx.currentUser.firstName;\n    const lastName = self.ctx.currentUser.lastName;\n    const email = self.ctx.currentUser.sub;\n    const tenantId = self.ctx.currentUser.tenantId;\n    \n    console.log({firstName, lastName, email, tenantId})\n    const fullName = firstName + ' ' + lastName\n    const welcomeName = fullName.trim() ? fullName : email\n    document.getElementById(\"welcome-fullname\").textContent = welcomeName\n</script>",
               "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
             },
             "title" : "Welcome",
