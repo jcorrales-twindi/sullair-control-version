@@ -313,6 +313,15 @@
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
+            }, {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "1eee675a-8320-8c3e-bbba-21fe119667d5",
+              "filterId" : null,
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -344,7 +353,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : true,
-              "markdownTextFunction" : "const devicesWithAssets  = data.filter((device)=>device.withRelation).map(device => device.entityId);\nconst filteredDevices = data.filter(device => !devicesWithAssets.includes(device.entityId));\nconst params = ctx.stateController.getStateParams()\n\nconst hydrateParams = {\n    ...params,\n    devicesWithAssets\n}\n\nctx.stateController.updateState(null, hydrateParams,)\nreturn `\n<button mat-flat-button id=\"table_devices\" style=\"width:100%; height:100% ;\" >\n    <div class=\"card\">\n        <div class=\"title\">Dispositivos sin flota asociada</div>\n        <div class=\"count\">${filteredDevices.length}</div>\n    </div>\n</button>`\n    \n",
+              "markdownTextFunction" : "let $injector = ctx.$scope.$injector;\nlet attributeService = $injector.get(\n  ctx.servicesMap.get('attributeService')\n);\n\nconst devicesWithAssets  = data.filter((device)=>device.withRelation).map(device => device.entityName);\nconst filteredDevices = data.filter(device => !(devicesWithAssets.includes(device.entityName) || device.entityType==='TENANT'));\nconst tenantData = data.find((datasource)=>datasource.entityType==='TENANT')\nconsole.log(\"tenant\",tenantData)\nif(tenantData){\n   attributeService.saveEntityAttributes(\n      {entityType:tenantData.entityType, id:tenantData.entityId},\n      'SERVER_SCOPE',\n      [[\"devicesWithAssets\",devicesWithAssets.join(',') ]]\n    ); \n}\nreturn `\n<button mat-flat-button id=\"table_devices\" style=\"width:100%; height:100% ;\" >\n    <div class=\"card\">\n        <div class=\"title\">Dispositivos sin flota asociada</div>\n        <div class=\"count\">${filteredDevices.length}</div>\n    </div>\n</button>`\n    \n",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".card{\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    gap:1rem;\n}\n.title {\n    color: #888;\n    font-size: 0.9rem;\n}\n.count {\n    font-size: 1.2rem;\n}\n"
             },
