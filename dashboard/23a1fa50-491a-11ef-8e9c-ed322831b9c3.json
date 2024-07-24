@@ -641,7 +641,7 @@
             "valueType" : "STRING",
             "predicates" : [ {
               "keyFilterPredicate" : {
-                "operation" : "NOT_CONTAINS",
+                "operation" : "NOT_IN",
                 "value" : {
                   "defaultValue" : "0160044577,0300117634",
                   "dynamicValue" : null
