@@ -355,7 +355,9 @@
             "titleTooltip" : "",
             "dropShadow" : true,
             "enableFullscreen" : false,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "borderRadius" : ".75rem"
+            },
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
