@@ -643,12 +643,8 @@
               "keyFilterPredicate" : {
                 "operation" : "NOT_CONTAINS",
                 "value" : {
-                  "defaultValue" : "",
-                  "dynamicValue" : {
-                    "sourceType" : "CURRENT_TENANT",
-                    "sourceAttribute" : "devicesWithAssets",
-                    "inherit" : false
-                  }
+                  "defaultValue" : "0160044577",
+                  "dynamicValue" : null
                 },
                 "ignoreCase" : false,
                 "type" : "STRING"
