@@ -250,6 +250,86 @@
           "row" : 0,
           "col" : 0,
           "id" : "1ca6e4ae-b106-045b-686f-07394ba03065"
+        },
+        "2c4b245b-0b6a-77a0-51e9-aa7885ace5a8" : {
+          "isSystemType" : true,
+          "bundleAlias" : "cards",
+          "typeAlias" : "markdown_card",
+          "type" : "latest",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "afab1b83-441c-8568-e91a-c39908270516",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "DataOrigin",
+                "type" : "attribute",
+                "label" : "DataOrigin",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2559483389443984
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1721744502800,
+                  "endTimeMs" : 1721830902800
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextFunction" : "return data.length",
+              "applyDefaultMarkdownStyle" : true
+            },
+            "title" : "New Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2c4b245b-0b6a-77a0-51e9-aa7885ace5a8"
         }
       },
       "states" : {
@@ -282,6 +362,12 @@
                   "sizeY" : 4,
                   "row" : 1,
                   "col" : 13
+                },
+                "2c4b245b-0b6a-77a0-51e9-aa7885ace5a8" : {
+                  "sizeX" : 5,
+                  "sizeY" : 3,
+                  "row" : 5,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
