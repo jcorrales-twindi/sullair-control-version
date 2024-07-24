@@ -443,7 +443,8 @@
               "entityNameColumnTitle" : "Serial",
               "displayEntityLabel" : false,
               "displayEntityType" : false,
-              "displayPagination" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 30,
               "defaultSortOrder" : "entityName",
               "useRowStyleFunction" : false
             },
@@ -473,15 +474,6 @@
                 },
                 "_hash" : 0.33931089426356986
               } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            }, {
-              "type" : "entity",
-              "name" : null,
-              "entityAliasId" : "f8297dd3-406d-fc76-0bd6-caf810b0e04f",
-              "filterId" : null,
-              "dataKeys" : [ ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
