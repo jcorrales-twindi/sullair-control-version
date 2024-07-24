@@ -311,6 +311,15 @@
               "id" : "13814000-1dd2-11b2-8080-808080808080"
             }
           }
+        },
+        "afab1b83-441c-8568-e91a-c39908270516" : {
+          "id" : "afab1b83-441c-8568-e91a-c39908270516",
+          "alias" : "Devices",
+          "filter" : {
+            "type" : "entityType",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE"
+          }
         }
       },
       "filters" : { },
