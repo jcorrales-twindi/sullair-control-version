@@ -353,7 +353,7 @@
             "iconSize" : "24px",
             "titleTooltip" : "",
             "dropShadow" : true,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "widgetStyle" : { },
             "titleStyle" : {
               "fontSize" : "16px",
@@ -363,7 +363,7 @@
             "useDashboardTimewindow" : true,
             "enableDataExport" : false,
             "widgetCss" : "",
-            "pageSize" : 1024,
+            "pageSize" : 2000,
             "noDataDisplayMessage" : ""
           },
           "row" : 0,
