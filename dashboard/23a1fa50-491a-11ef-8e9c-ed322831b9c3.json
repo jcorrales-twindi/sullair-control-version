@@ -501,7 +501,7 @@
               "borderRadius" : ".75rem"
             },
             "widgetCss" : "",
-            "pageSize" : 1024,
+            "pageSize" : 2000,
             "noDataDisplayMessage" : ""
           },
           "row" : 0,
