@@ -476,6 +476,15 @@
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
+            }, {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "f8297dd3-406d-fc76-0bd6-caf810b0e04f",
+              "filterId" : null,
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "displayTimewindow" : true,
             "actions" : {
@@ -501,7 +510,7 @@
               "borderRadius" : ".75rem"
             },
             "widgetCss" : "",
-            "pageSize" : 2000,
+            "pageSize" : 2500,
             "noDataDisplayMessage" : ""
           },
           "row" : 0,
