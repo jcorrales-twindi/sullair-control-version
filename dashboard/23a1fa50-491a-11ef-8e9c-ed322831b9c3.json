@@ -344,7 +344,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : true,
-              "markdownTextFunction" : "const filtersDevices = data.filter((device)=>!device.withRelation)\nreturn `<button mat-flat-button id=\"table_devices\" style=\"width:100%; height:100% ;\" >\n            <div class=\"card\">\n                <h4>Dispositivos sin flota asociada:</h4>\n                <h1>${filtersDevices.length}</h1>\n            </div>\n    </button>`",
+              "markdownTextFunction" : "const devicesWithAssets  = data.filter((device)=>device.withRelation).map(device => device.entityId);\nconst filteredDevices = data.filter(device => !devicesWithAssets.includes(device.entityId));\nreturn `<button mat-flat-button id=\"table_devices\" style=\"width:100%; height:100% ;\" >\n            <div class=\"card\">\n                <h4>Dispositivos sin flota asociada:</h4>\n                <h1>${filteredDevices.length}</h1>\n            </div>\n    </button>`",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ".card{\n    display:flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    gap:1rem;\n    \n}\n\n"
             },
