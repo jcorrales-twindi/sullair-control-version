@@ -360,7 +360,11 @@
               "fontWeight" : 400
             },
             "showLegend" : false,
-            "useDashboardTimewindow" : true
+            "useDashboardTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
