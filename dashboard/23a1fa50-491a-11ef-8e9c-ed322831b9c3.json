@@ -443,8 +443,7 @@
               "entityNameColumnTitle" : "Serial",
               "displayEntityLabel" : false,
               "displayEntityType" : false,
-              "displayPagination" : true,
-              "defaultPageSize" : 30,
+              "displayPagination" : false,
               "defaultSortOrder" : "entityName",
               "useRowStyleFunction" : false
             },
@@ -502,7 +501,7 @@
               "borderRadius" : ".75rem"
             },
             "widgetCss" : "",
-            "pageSize" : 2500,
+            "pageSize" : null,
             "noDataDisplayMessage" : ""
           },
           "row" : 0,
