@@ -278,6 +278,41 @@
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
+            }, {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "f8297dd3-406d-fc76-0bd6-caf810b0e04f",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "DataOrigin",
+                "type" : "attribute",
+                "label" : "DataOrigin",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.3635586728324115,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "withRelation",
+                "type" : "attribute",
+                "label" : "withRelation",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.6938798868430843,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return true;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
@@ -309,7 +344,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : true,
-              "markdownTextFunction" : "return data.length",
+              "markdownTextFunction" : "const filtersDevices = data.filter((device)=>!device.withRelation)\nreturn `Dispositivos sin relacion: ${filtersDevices.length}`",
               "applyDefaultMarkdownStyle" : true
             },
             "title" : "New Markdown/HTML Card",
@@ -405,6 +440,26 @@
             "type" : "entityType",
             "resolveMultiple" : true,
             "entityType" : "DEVICE"
+          }
+        },
+        "f8297dd3-406d-fc76-0bd6-caf810b0e04f" : {
+          "id" : "f8297dd3-406d-fc76-0bd6-caf810b0e04f",
+          "alias" : "Device with asset relation",
+          "filter" : {
+            "type" : "deviceSearchQuery",
+            "resolveMultiple" : true,
+            "rootStateEntity" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null,
+            "rootEntity" : {
+              "entityType" : "ASSET",
+              "id" : "66c93d30-177d-11ef-8a81-796b974d7f03"
+            },
+            "direction" : "FROM",
+            "maxLevel" : 8,
+            "fetchLastLevelOnly" : false,
+            "relationType" : null,
+            "deviceTypes" : [ "JLG", "default", "Volvo", "SmartOne-C", "Scania", "Komatsu", "JDeere", "JCBC", "GT1200", "GT1030" ]
           }
         }
       },
