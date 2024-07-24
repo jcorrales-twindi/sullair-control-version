@@ -363,7 +363,7 @@
             "useDashboardTimewindow" : true,
             "enableDataExport" : false,
             "widgetCss" : "",
-            "pageSize" : 2000,
+            "pageSize" : 2500,
             "noDataDisplayMessage" : ""
           },
           "row" : 0,
