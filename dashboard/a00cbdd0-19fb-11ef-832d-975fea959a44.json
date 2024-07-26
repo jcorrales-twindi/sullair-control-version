@@ -379,10 +379,9 @@
           "id" : "413e8c5a-0f77-96be-e0bd-837ad9f542be",
           "alias" : "Devices",
           "filter" : {
-            "type" : "deviceType",
+            "type" : "entityType",
             "resolveMultiple" : true,
-            "deviceTypes" : [ "SmartOne-C", "default" ],
-            "deviceNameFilter" : ""
+            "entityType" : "DEVICE"
           }
         }
       },
