@@ -441,7 +441,8 @@
                   } ],
                   "useCustomIcon" : false,
                   "useGetValueFunction" : false,
-                  "useSetValueFunction" : false
+                  "useSetValueFunction" : true,
+                  "setValueFunctionBody" : "console.log(\"setValue=>\",value, originValue, )\n\nreturn value"
                 },
                 "_hash" : 0.1118910901905481,
                 "aggregationType" : null,
