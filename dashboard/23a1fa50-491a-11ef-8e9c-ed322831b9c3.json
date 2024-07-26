@@ -504,7 +504,7 @@
             "actions" : {
               "actionCellButton" : [ {
                 "name" : "Agregar Relación",
-                "icon" : "visibility",
+                "icon" : "device_hub",
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "customPretty",
