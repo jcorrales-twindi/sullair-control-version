@@ -486,7 +486,7 @@
             "padding" : "8px",
             "settings" : {
               "widgetTitle" : "Filtros",
-              "showResultMessage" : true,
+              "showResultMessage" : false,
               "showActionButtons" : true,
               "updateAllValues" : false,
               "saveButtonLabel" : "Aplicar",
