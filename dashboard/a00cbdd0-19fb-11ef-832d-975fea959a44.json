@@ -247,8 +247,22 @@
                 "type" : "timeseries",
                 "label" : "CumulativeOperatingHours",
                 "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.16195592619917476
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "console.log(\"Data=>\", value,entity,ctx)\n\nreturn value",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.16195592619917476,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "Binary1QualifiedInput",
                 "type" : "timeseries",
