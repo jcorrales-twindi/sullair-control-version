@@ -442,7 +442,7 @@
                   "useCustomIcon" : false,
                   "useGetValueFunction" : false,
                   "useSetValueFunction" : true,
-                  "setValueFunctionBody" : "console.log(\"setValue=>\",ctx.datasource[0] )\n\nreturn value == 'all' ? '' : value"
+                  "setValueFunctionBody" : "console.log(\"setValue=>\",ctx.datasource[0] )\n\nreturn value == 'all' ? null : value"
                 },
                 "_hash" : 0.1118910901905481,
                 "aggregationType" : null,
