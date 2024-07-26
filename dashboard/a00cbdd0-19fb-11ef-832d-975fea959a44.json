@@ -439,7 +439,8 @@
                     "label" : "Obra 1"
                   } ],
                   "useCustomIcon" : false,
-                  "useGetValueFunction" : false,
+                  "useGetValueFunction" : true,
+                  "getValueFunctionBody" : "console.log(\"Value=>\", value)\nreturn value ? value : 'all'",
                   "useSetValueFunction" : true,
                   "setValueFunctionBody" : "console.log(\"setValue=>\",ctx )\n\nreturn value == 'all' ? undefined : value"
                 },
