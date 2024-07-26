@@ -410,7 +410,8 @@
                     "label" : "600"
                   } ],
                   "useCustomIcon" : false,
-                  "useGetValueFunction" : false,
+                  "useGetValueFunction" : true,
+                  "getValueFunctionBody" : "console.log(\"value=>\",value,ctx)\n\nreturn value",
                   "useSetValueFunction" : false
                 },
                 "_hash" : 0.24696092725805618,
@@ -443,6 +444,30 @@
                   "useSetValueFunction" : false
                 },
                 "_hash" : 0.1118910901905481,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "135ff87b-a23e-1244-dc29-961801c02ee7",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#f44336",
+                "settings" : {
+                  "dataKeyHidden" : true
+                },
+                "_hash" : 0.10167071145854711,
                 "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
