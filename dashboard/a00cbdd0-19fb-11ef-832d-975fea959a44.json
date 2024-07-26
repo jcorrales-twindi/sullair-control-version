@@ -410,8 +410,7 @@
                     "label" : "600"
                   } ],
                   "useCustomIcon" : false,
-                  "useGetValueFunction" : true,
-                  "getValueFunctionBody" : "console.log(\"value=>\",value,ctx)\n\nreturn value",
+                  "useGetValueFunction" : false,
                   "useSetValueFunction" : false
                 },
                 "_hash" : 0.24696092725805618,
@@ -442,7 +441,7 @@
                   "useCustomIcon" : false,
                   "useGetValueFunction" : false,
                   "useSetValueFunction" : true,
-                  "setValueFunctionBody" : "console.log(\"setValue=>\",ctx.datasource[0] )\n\nreturn value == 'all' ? null : value"
+                  "setValueFunctionBody" : "console.log(\"setValue=>\",ctx )\n\nreturn value == 'all' ? undefined : value"
                 },
                 "_hash" : 0.1118910901905481,
                 "aggregationType" : null,
