@@ -421,9 +421,9 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "displayArtwork",
+                "name" : "displayConstructionSite",
                 "type" : "attribute",
-                "label" : "displayArtwork",
+                "label" : "displayConstructionSite",
                 "color" : "#4caf50",
                 "settings" : {
                   "dataKeyHidden" : false,
@@ -799,7 +799,7 @@
           "keyFilters" : [ {
             "key" : {
               "type" : "ATTRIBUTE",
-              "key" : "artwork"
+              "key" : "constructionSite"
             },
             "valueType" : "STRING",
             "predicates" : [ {
