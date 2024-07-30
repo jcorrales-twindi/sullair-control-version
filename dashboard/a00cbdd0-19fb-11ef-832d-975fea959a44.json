@@ -520,7 +520,7 @@
       },
       "states" : {
         "default" : {
-          "name" : "borrar",
+          "name" : "Reporte de uso",
           "root" : true,
           "layouts" : {
             "main" : {
@@ -870,9 +870,9 @@
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "borrar",
+    "name" : "Reporte de uso",
     "ownerId" : null,
-    "title" : "borrar"
+    "title" : "Reporte de uso"
   },
   "attributes" : {
     "SERVER_SCOPE" : [ ]
