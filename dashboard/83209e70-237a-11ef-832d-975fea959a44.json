@@ -6861,6 +6861,232 @@
           "row" : 0,
           "col" : 0,
           "id" : "baa75ac5-f434-a7b8-5302-412ff40b9d63"
+        },
+        "1fa68405-4b87-dfc5-f350-bbf06086b971" : {
+          "isSystemType" : true,
+          "bundleAlias" : "cards",
+          "typeAlias" : "markdown_card",
+          "type" : "latest",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entityCount",
+              "name" : null,
+              "entityAliasId" : "25b6753b-b609-39df-878d-ecb9a5de7507",
+              "filterId" : "f8f411ca-11d4-77f0-5558-827ccb2041f2",
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8706871028787999,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697667473428,
+                  "endTimeMs" : 1697753873428
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextFunction" : "\nreturn `<div id='ReportesOnline' class='card'>\n    <div class='content'>\n        <div class='column'>\n            <h1></h1>\n            <div class='value'>\n                ${data[0]['count']}\n            </div>\n            <div class='description'>\n                 Dispositivos\\n MicroTRACK\n            </div>\n             <div id='ReportesOnline' class='description'>\n                <button>Ver reportes</button>\n            </div>\n        </div>\n    </div>\n</div>`\n\n\n//return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".card {\n   width: 100%;\n   height: 100%;\n   box-sizing: border-box;  cursor:pointer;\n}\n\n.card .content {\n   padding: 20px;\n   display: flex;\n   flex-direction: row;\n   align-items: center;\n   justify-content: space-around;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content .column {\n   display: flex;\n   flex-direction: column;    \n   justify-content: space-around;\n   height: 100%;\n}\n\n.card h1 {\n    text-transform: uppercase;\n    color: #999;\n    font-size: 20px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}\n\n.card .value {\n    font-size: 50px;\n font-weight: 600;\n   color: #ff5400;\n    text-align: center;\n}\n\n.card .description {\n    font-size: 15px;\n    color: #999; text-align: center;\n}\n\n#ReportesOnline button {\n    background-color: #ff5400; /* Fondo naranja */\n    color: #ffffff; /* Color de texto blanco */\n    border: none; /* Sin borde */\n    padding: 10px 20px; /* Espaciado interno */\n    text-align: center; /* Alineación del texto */\n    text-decoration: none; /* Sin subrayado */\n    display: inline-block; /* Display en línea */\n    font-size: 16px; /* Tamaño de fuente */\n    margin: 4px 2px; /* Margen alrededor del botón */\n    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n    border-radius: 8px; /* Bordes redondeados */\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Sombra del botón */\n    transition: background-color 0.3s, transform 0.3s; /* Transición suave para el cambio de color y el efecto de clic */\n}\n\n#ReportesOnline button:hover {\n    background-color: #e64a00; /* Fondo naranja más oscuro al pasar el ratón */\n}\n\n#ReportesOnline button:active {\n    transform: translateY(2px); /* Efecto de clic */\n}\n\n\n@media only screen and (max-width: 1600px) {\n .card .value {\n    font-size: 32px;\n}}\n"
+            },
+            "title" : "New Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "borderRadius" : "10.0rem"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "ReportesOnline",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "dispositivos_microtrack",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "dialogTitle" : "Reportes MicroTRACK",
+                "dialogHideDashboardToolbar" : true,
+                "dialogWidth" : 80,
+                "dialogHeight" : 90,
+                "openInSeparateDialog" : true,
+                "openInPopover" : false,
+                "id" : "fd98a40b-fb5c-3561-5028-b738cda75f84"
+              } ]
+            },
+            "enableDataExport" : false,
+            "widgetCss" : ".html-value-card-1010394395 .card {\r\n    width: 100%;\r\n    height: 100%;\r\n    border: none;\r\n    box-sizing: border-box;\r\n}",
+            "pageSize" : null,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "1fa68405-4b87-dfc5-f350-bbf06086b971"
+        },
+        "62ca89fc-01b2-8a3e-7090-1d276530e11a" : {
+          "isSystemType" : true,
+          "bundleAlias" : "cards",
+          "typeAlias" : "markdown_card",
+          "type" : "latest",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entityCount",
+              "name" : null,
+              "entityAliasId" : "25b6753b-b609-39df-878d-ecb9a5de7507",
+              "filterId" : "f8f411ca-11d4-77f0-5558-827ccb2041f2",
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8706871028787999,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1697667473428,
+                  "endTimeMs" : 1697753873428
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : true,
+              "markdownTextFunction" : "\nreturn `<div id='ReportesOnline' class='card'>\n    <div class='content'>\n        <div class='column'>\n            <h1></h1>\n            <div class='value'>\n                ${data[0]['count']}\n            </div>\n            <div class='description'>\n                 Dispositivos\\n MicroTRACK\n            </div>\n             <div id='ReportesOnline' class='description'>\n                <button>Ver reportes</button>\n            </div>\n        </div>\n    </div>\n</div>`\n\n\n//return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".card {\n   width: 100%;\n   height: 100%;\n   box-sizing: border-box;  cursor:pointer;\n}\n\n.card .content {\n   padding: 20px;\n   display: flex;\n   flex-direction: row;\n   align-items: center;\n   justify-content: space-around;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content .column {\n   display: flex;\n   flex-direction: column;    \n   justify-content: space-around;\n   height: 100%;\n}\n\n.card h1 {\n    text-transform: uppercase;\n    color: #999;\n    font-size: 20px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}\n\n.card .value {\n    font-size: 50px;\n font-weight: 600;\n   color: #ff5400;\n    text-align: center;\n}\n\n.card .description {\n    font-size: 15px;\n    color: #999; text-align: center;\n}\n\n#ReportesOnline button {\n    background-color: #ff5400; /* Fondo naranja */\n    color: #ffffff; /* Color de texto blanco */\n    border: none; /* Sin borde */\n    padding: 10px 20px; /* Espaciado interno */\n    text-align: center; /* Alineación del texto */\n    text-decoration: none; /* Sin subrayado */\n    display: inline-block; /* Display en línea */\n    font-size: 16px; /* Tamaño de fuente */\n    margin: 4px 2px; /* Margen alrededor del botón */\n    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */\n    border-radius: 8px; /* Bordes redondeados */\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Sombra del botón */\n    transition: background-color 0.3s, transform 0.3s; /* Transición suave para el cambio de color y el efecto de clic */\n}\n\n#ReportesOnline button:hover {\n    background-color: #e64a00; /* Fondo naranja más oscuro al pasar el ratón */\n}\n\n#ReportesOnline button:active {\n    transform: translateY(2px); /* Efecto de clic */\n}\n\n\n@media only screen and (max-width: 1600px) {\n .card .value {\n    font-size: 32px;\n}}\n"
+            },
+            "title" : "New Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : {
+              "borderRadius" : "10.0rem"
+            },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "actions" : {
+              "elementClick" : [ {
+                "name" : "ReportesOnline",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "dispositivos_microtrack",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "dialogTitle" : "Reportes MicroTRACK",
+                "dialogHideDashboardToolbar" : true,
+                "dialogWidth" : 80,
+                "dialogHeight" : 90,
+                "openInSeparateDialog" : true,
+                "openInPopover" : false,
+                "id" : "fd98a40b-fb5c-3561-5028-b738cda75f84"
+              } ]
+            },
+            "enableDataExport" : false,
+            "widgetCss" : ".html-value-card-1010394395 .card {\r\n    width: 100%;\r\n    height: 100%;\r\n    border: none;\r\n    box-sizing: border-box;\r\n}",
+            "pageSize" : null,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "62ca89fc-01b2-8a3e-7090-1d276530e11a"
         }
       },
       "states" : {
@@ -6913,40 +7139,52 @@
                   "col" : 0
                 },
                 "580ea4ab-0d80-1e83-68de-9cded59a985e" : {
-                  "sizeX" : 4,
+                  "sizeX" : 3,
                   "sizeY" : 3,
                   "row" : 6,
-                  "col" : 4
+                  "col" : 3
                 },
                 "07addb28-bff3-3761-57cb-2c18bbdbee0e" : {
-                  "sizeX" : 4,
+                  "sizeX" : 3,
                   "sizeY" : 3,
                   "row" : 6,
-                  "col" : 8
+                  "col" : 6
                 },
                 "10979f66-f457-507e-272d-3779f467fab6" : {
-                  "sizeX" : 4,
+                  "sizeX" : 3,
+                  "sizeY" : 3,
+                  "row" : 6,
+                  "col" : 9
+                },
+                "90bf2c7f-6631-89de-6ae4-33d7ea5bd134" : {
+                  "sizeX" : 3,
                   "sizeY" : 3,
                   "row" : 6,
                   "col" : 12
                 },
-                "90bf2c7f-6631-89de-6ae4-33d7ea5bd134" : {
-                  "sizeX" : 4,
-                  "sizeY" : 3,
-                  "row" : 6,
-                  "col" : 16
-                },
                 "70e4c461-e129-03f2-a5f9-b01415832531" : {
-                  "sizeX" : 4,
+                  "sizeX" : 3,
                   "sizeY" : 3,
                   "row" : 6,
-                  "col" : 20
+                  "col" : 15
                 },
                 "baa75ac5-f434-a7b8-5302-412ff40b9d63" : {
                   "sizeX" : 6,
                   "sizeY" : 6,
                   "row" : 0,
                   "col" : 0
+                },
+                "1fa68405-4b87-dfc5-f350-bbf06086b971" : {
+                  "sizeX" : 3,
+                  "sizeY" : 3,
+                  "row" : 6,
+                  "col" : 18
+                },
+                "62ca89fc-01b2-8a3e-7090-1d276530e11a" : {
+                  "sizeX" : 3,
+                  "sizeY" : 3,
+                  "row" : 6,
+                  "col" : 21
                 }
               },
               "gridSettings" : {
