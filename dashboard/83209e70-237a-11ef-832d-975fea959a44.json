@@ -5304,7 +5304,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "detalle_eqps_hoy",
+                "targetDashboardStateId" : "listado_de_dispositivos_scania",
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
