@@ -3552,7 +3552,7 @@
           "filter" : {
             "type" : "assetType",
             "resolveMultiple" : true,
-            "assetTypes" : [ "flota-raiz" ],
+            "assetTypes" : [ "fleet-root" ],
             "assetNameFilter" : ""
           }
         }
