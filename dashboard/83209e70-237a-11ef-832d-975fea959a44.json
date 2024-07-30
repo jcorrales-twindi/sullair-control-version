@@ -7447,8 +7447,7 @@
               "displayEntityType" : false,
               "displayPagination" : false,
               "defaultSortOrder" : "entityName",
-              "useRowStyleFunction" : true,
-              "rowStyleFunction" : "\r\n//console.log(\"TIPO DE DATA ORIGIN: \", entity);\r\n\r\n// Verifica si existe\r\nif (entity.DataOrigin) {\r\n  if (entity.DataOrigin == 'VolvoClient') {\r\n    var result = {};\r\n    result.display = 'none';  // Ocultar el reporte si no es de hoy\r\n    return result;\r\n  }{var result = {};\r\n    return result;}\r\n} else {\r\n  // Si no es válida, maneja el error\r\n  var result = {};\r\n  result.display = 'none';\r\n  return result;\r\n}\r\n"
+              "useRowStyleFunction" : false
             },
             "title" : "New Entities table",
             "dropShadow" : true,
