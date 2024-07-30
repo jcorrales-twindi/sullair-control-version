@@ -7986,29 +7986,6 @@
             }
           }
         },
-        "dispositivos_microtrack" : {
-          "name" : "Dispositivos MicroTRACK",
-          "root" : false,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "b964b070-317c-0bf6-7d7c-2bbeb6178a32" : {
-                  "sizeX" : 24,
-                  "sizeY" : 10,
-                  "row" : 0,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "backgroundColor" : "#eeeeee",
-                "columns" : 24,
-                "margin" : 10,
-                "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
-              }
-            }
-          }
-        },
         "reportes_devicecloud" : {
           "name" : "Reportes DeviceCloud",
           "root" : false,
@@ -8039,6 +8016,157 @@
             "main" : {
               "widgets" : {
                 "23bd14b4-0001-4d66-ef8b-b5e729593096" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "listado_de_dispositivos_scania" : {
+          "name" : "Listado de Dispositivos Scania",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "listado_de_dispositivos_microtrack" : {
+          "name" : "Listado de Dispositivos MicroTRACK",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "listado_de_dispositivos_jdeere" : {
+          "name" : "Listado de Dispositivos JDeere",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "listado_de_dispositivos_komatsu" : {
+          "name" : "Listado de Dispositivos Komatsu",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "listado_de_dispositivos_jcb" : {
+          "name" : "Listado de Dispositivos JCB",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "listado_de_dispositivos_volvo" : {
+          "name" : "Listado de Dispositivos Volvo",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "listado_de_dispositivos_clearsky" : {
+          "name" : "Listado de Dispositivos ClearSky",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "listado_de_dispositivos_device_cloud" : {
+          "name" : "Listado de Dispositivos Device Cloud",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "reportes_microtrack" : {
+          "name" : "Reportes MicroTRACK",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "b964b070-317c-0bf6-7d7c-2bbeb6178a32" : {
                   "sizeX" : 24,
                   "sizeY" : 10,
                   "row" : 0,
