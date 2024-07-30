@@ -7750,7 +7750,7 @@
           "filter" : {
             "type" : "deviceType",
             "resolveMultiple" : true,
-            "deviceTypes" : [ "SmartOne-C", "default" ],
+            "deviceTypes" : [ "default", "GT1030", "GT1200", "JCB", "JDeere", "Komatsu", "MicroTRACK", "Scania", "Volvo" ],
             "deviceNameFilter" : ""
           }
         },
