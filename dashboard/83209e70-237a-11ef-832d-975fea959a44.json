@@ -7275,7 +7275,7 @@
                 "name" : "Latitude",
                 "type" : "timeseries",
                 "label" : "Reportes",
-                "color" : "#FF5400",
+                "color" : "#0D8972",
                 "settings" : { },
                 "_hash" : 0.3353113548136837,
                 "aggregationType" : null,
