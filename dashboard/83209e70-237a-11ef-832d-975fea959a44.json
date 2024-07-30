@@ -7377,6 +7377,160 @@
           "row" : 0,
           "col" : 0,
           "id" : "7812d37d-0a70-a76e-b311-8a835367e02e"
+        },
+        "601e8d85-d908-7f64-301a-c235924d08e3" : {
+          "isSystemType" : true,
+          "bundleAlias" : "cards",
+          "typeAlias" : "entities_table",
+          "type" : "latest",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1685540903811,
+                  "endTimeMs" : 1685627303811
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "entitiesTitle" : "Listado de Equipos",
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : true,
+              "entityNameColumnTitle" : "Equipo",
+              "displayEntityLabel" : false,
+              "displayEntityType" : false,
+              "displayPagination" : false,
+              "defaultSortOrder" : "entityName",
+              "useRowStyleFunction" : true,
+              "rowStyleFunction" : "\r\n//console.log(\"TIPO DE DATA ORIGIN: \", entity);\r\n\r\n// Verifica si existe\r\nif (entity.DataOrigin) {\r\n  if (entity.DataOrigin == 'VolvoClient') {\r\n    var result = {};\r\n    result.display = 'none';  // Ocultar el reporte si no es de hoy\r\n    return result;\r\n  }{var result = {};\r\n    return result;}\r\n} else {\r\n  // Si no es válida, maneja el error\r\n  var result = {};\r\n  result.display = 'none';\r\n  return result;\r\n}\r\n"
+            },
+            "title" : "New Entities table",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "25b6753b-b609-39df-878d-ecb9a5de7507",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "Estado",
+                "color" : "#04FF58",
+                "settings" : { },
+                "_hash" : 0.2745508534808401,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "\nif (value == 'true') {\n    return \"online\";\n}\nelse { return \"offline\"}"
+              }, {
+                "name" : "lastActivityTime",
+                "type" : "attribute",
+                "label" : "lastActivityTime",
+                "color" : "#ffc107",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false,
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.11411434281534039,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "let date = moment(value).format(\"DD-MM-YYYY HH:mm:ss\");\nreturn date;"
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Tipo",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.9397387940453885,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "DataOrigin",
+                "type" : "attribute",
+                "label" : "DataOrigin",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.275682347477499
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : true,
+            "actions" : {
+              "rowClick" : [ {
+                "name" : "Detalle de Dispositivo",
+                "icon" : "insert_chart",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "\r\n\r\n\r\nlet $state = widgetContext.$scope.$injector;\r\n\r\n\r\n$state.get(widgetContext.servicesMap.get('deviceService'))\r\n    .getDevice(entityId.id).subscribe(function(device) {\r\n           //console.log(device);\r\n        //console.log(device.deviceProfileId.id);\r\n      \r\n            openDashboardState('IDP_DEVICE',device.name, device.type);\r\n      \r\n    });\r\n\r\nfunction openDashboardState(stateId, serialnumber, deviceProfileName) {\r\n\r\n    const params = {\r\n        entityId: entityId,\r\n        entityName: entityName,\r\n        entityLabel: entityLabel\r\n    };\r\n    let title = 'Detalle de Equipo: ' + serialnumber + ' ' +'| Tipo: ' + deviceProfileName\r\n    openStateInDialog(stateId, params, '80', '90', title);\r\n}\r\n\r\nfunction openStateInDialog(stateId, stateParams, width, height, title) {\r\n    widgetContext.actionsApi.openDashboardStateInSeparateDialog(stateId, stateParams, title, true, width, height);\r\n}",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "f336606e-a6c4-6fe2-a8b3-4737e98ebf53"
+              } ]
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "601e8d85-d908-7f64-301a-c235924d08e3"
         }
       },
       "states" : {
@@ -8117,7 +8271,14 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "601e8d85-d908-7f64-301a-c235924d08e3" : {
+                  "sizeX" : 25,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
