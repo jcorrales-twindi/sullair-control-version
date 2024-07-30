@@ -1719,7 +1719,7 @@
               "displayPagination" : false,
               "defaultSortOrder" : "entityName",
               "useRowStyleFunction" : true,
-              "rowStyleFunction" : "// Suponiendo que entity.lastActivityTime es una cadena de texto que representa una fecha\r\nconst lastActivityTime = entity.lastActivityTime;\r\n\r\n// Intenta crear un objeto moment a partir de la fecha\r\nconst momentDate = moment(lastActivityTime, \"DD-MM-YYYY HH:mm:ss\");\r\n\r\n// Verifica si la fecha es válida\r\nif (momentDate.isValid()) {\r\n  // Fecha de hoy (sin hora)\r\n  let startOfToday = moment().startOf('day');\r\n  let endOfToday = moment().endOf('day');\r\n  \r\n  // Compara la fecha del reporte con la fecha de hoy (considerando todo el día)\r\n  if (momentDate.isBetween(startOfToday, endOfToday, null, '[]') == false) {\r\n    var result = {};\r\n    result.display = 'none';  // Ocultar el reporte si no es de hoy\r\n    return result;\r\n  }{var result = {};\r\n    return result;}\r\n} else {\r\n  // Si no es válida, maneja el error\r\n  var result = {};\r\n  result.display = 'none';\r\n  return result;\r\n}\r\n"
+              "rowStyleFunction" : "// Suponiendo que entity.lastActivityTime es una cadena de texto que representa una fecha\r\nconst lastActivityTime = entity.lastActivityTime;\r\nconsole.log(\"TIPO DE DATA ORIGIN: \", entity);\r\n// Intenta crear un objeto moment a partir de la fecha\r\nconst momentDate = moment(lastActivityTime, \"DD-MM-YYYY HH:mm:ss\");\r\n\r\n// Verifica si la fecha es válida\r\nif (momentDate.isValid()) {\r\n  // Fecha de hoy (sin hora)\r\n  let startOfToday = moment().startOf('day');\r\n  let endOfToday = moment().endOf('day');\r\n  \r\n  // Compara la fecha del reporte con la fecha de hoy (considerando todo el día)\r\n  if (momentDate.isBetween(startOfToday, endOfToday, null, '[]') == false) {\r\n    var result = {};\r\n    result.display = 'none';  // Ocultar el reporte si no es de hoy\r\n    return result;\r\n  }{var result = {};\r\n    return result;}\r\n} else {\r\n  // Si no es válida, maneja el error\r\n  var result = {};\r\n  result.display = 'none';\r\n  return result;\r\n}\r\n"
             },
             "title" : "New Entities table",
             "dropShadow" : true,
@@ -1782,6 +1782,13 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
+              }, {
+                "name" : "DataOrigin",
+                "type" : "attribute",
+                "label" : "DataOrigin",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.275682347477499
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
