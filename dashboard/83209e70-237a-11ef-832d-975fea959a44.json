@@ -6780,7 +6780,7 @@
               "dataKeys" : [ {
                 "name" : "count",
                 "type" : "count",
-                "label" : "count",
+                "label" : "ClearSky",
                 "color" : "#0D8972",
                 "settings" : { },
                 "_hash" : 0.4632824039718326,
@@ -6802,7 +6802,7 @@
               "dataKeys" : [ {
                 "name" : "count",
                 "type" : "count",
-                "label" : "count 2",
+                "label" : "DeviceCloud",
                 "color" : "#5E2308",
                 "settings" : { },
                 "_hash" : 0.515865331400682,
