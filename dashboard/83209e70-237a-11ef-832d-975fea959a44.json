@@ -6759,7 +6759,7 @@
                 "name" : "count",
                 "type" : "count",
                 "label" : "MicroTRACK",
-                "color" : "#00BCD4",
+                "color" : "#FF5400",
                 "settings" : { },
                 "_hash" : 0.610235072723295,
                 "aggregationType" : null,
