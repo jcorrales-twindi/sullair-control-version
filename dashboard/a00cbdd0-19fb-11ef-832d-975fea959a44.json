@@ -545,7 +545,7 @@
                   "required" : false,
                   "isEditable" : "editable",
                   "selectOptions" : [ {
-                    "value" : "all",
+                    "value" : "obra 1,  ",
                     "label" : "Todas"
                   }, {
                     "value" : "obra 1",
@@ -553,9 +553,9 @@
                   } ],
                   "useCustomIcon" : false,
                   "useGetValueFunction" : true,
-                  "getValueFunctionBody" : "return value? value : 'all'",
+                  "getValueFunctionBody" : "return value",
                   "useSetValueFunction" : true,
-                  "setValueFunctionBody" : "return value === 'all'? null : value"
+                  "setValueFunctionBody" : "return value"
                 },
                 "_hash" : 0.44967691035128743,
                 "aggregationType" : null,
