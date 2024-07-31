@@ -9036,8 +9036,8 @@
                 "0a3f6df2-440b-32c1-f10e-070755f6f243" : {
                   "sizeX" : 10,
                   "sizeY" : 7,
-                  "row" : 21,
-                  "col" : 12
+                  "row" : 22,
+                  "col" : 8
                 },
                 "580ea4ab-0d80-1e83-68de-9cded59a985e" : {
                   "sizeX" : 10,
@@ -9088,10 +9088,10 @@
                   "col" : 54
                 },
                 "4506097c-c00a-42cf-1e2f-d70fcd72a4da" : {
-                  "sizeX" : 10,
-                  "sizeY" : 7,
+                  "sizeX" : 8,
+                  "sizeY" : 8,
                   "row" : 21,
-                  "col" : 2
+                  "col" : 0
                 },
                 "c84d65d5-8d7b-c448-4b03-ed6432d9b280" : {
                   "sizeX" : 10,
