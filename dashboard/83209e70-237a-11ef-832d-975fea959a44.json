@@ -6901,6 +6901,50 @@
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
+            }, {
+              "type" : "entityCount",
+              "name" : null,
+              "entityAliasId" : "25b6753b-b609-39df-878d-ecb9a5de7507",
+              "filterId" : "4503dffb-8c01-cf3a-32fb-8cac63ff077d",
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "color" : "#A5DA00",
+                "settings" : { },
+                "_hash" : 0.26219777334096506,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entityCount",
+              "name" : null,
+              "entityAliasId" : "25b6753b-b609-39df-878d-ecb9a5de7507",
+              "filterId" : "9da860f4-aef8-bff1-0526-f3277ff1025e",
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count 2",
+                "color" : "#AE8A0F",
+                "settings" : { },
+                "_hash" : 0.25117104793482237,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "displayValue" : "",
