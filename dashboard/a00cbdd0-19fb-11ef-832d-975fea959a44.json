@@ -741,7 +741,7 @@
               "keyFilterPredicate" : {
                 "operation" : "IN",
                 "value" : {
-                  "defaultValue" : "",
+                  "defaultValue" : "  ",
                   "dynamicValue" : {
                     "sourceType" : "CURRENT_USER",
                     "sourceAttribute" : "displayConstructionSite",
