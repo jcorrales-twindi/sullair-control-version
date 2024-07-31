@@ -241,7 +241,7 @@
               "type" : "entity",
               "name" : null,
               "entityAliasId" : "413e8c5a-0f77-96be-e0bd-837ad9f542be",
-              "filterId" : "3a43ecc0-b83b-3486-fec4-194adaefd694",
+              "filterId" : null,
               "dataKeys" : [ {
                 "name" : "CumulativeOperatingHours",
                 "type" : "timeseries",
