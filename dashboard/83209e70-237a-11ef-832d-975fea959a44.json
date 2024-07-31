@@ -6909,7 +6909,7 @@
               "dataKeys" : [ {
                 "name" : "count",
                 "type" : "count",
-                "label" : "count",
+                "label" : "SmartOne-C",
                 "color" : "#A5DA00",
                 "settings" : { },
                 "_hash" : 0.26219777334096506,
@@ -6931,7 +6931,7 @@
               "dataKeys" : [ {
                 "name" : "count",
                 "type" : "count",
-                "label" : "count 2",
+                "label" : "IDP",
                 "color" : "#AE8A0F",
                 "settings" : { },
                 "_hash" : 0.25117104793482237,
