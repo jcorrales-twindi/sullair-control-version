@@ -8998,7 +8998,7 @@
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
-                "dialogTitle" : "Reportes Scania",
+                "dialogTitle" : "Reportes IDP",
                 "dialogHideDashboardToolbar" : true,
                 "dialogWidth" : 80,
                 "dialogHeight" : 90,
