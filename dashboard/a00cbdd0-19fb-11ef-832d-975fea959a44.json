@@ -440,9 +440,9 @@
                   } ],
                   "useCustomIcon" : false,
                   "useGetValueFunction" : true,
-                  "getValueFunctionBody" : "return value == ' ' ? value : 'all'",
+                  "getValueFunctionBody" : "return value ? value : 'all'",
                   "useSetValueFunction" : true,
-                  "setValueFunctionBody" : "return value == 'all' ? ' ' : value"
+                  "setValueFunctionBody" : "return value == 'all' ? null : value"
                 },
                 "_hash" : 0.1118910901905481,
                 "aggregationType" : null,
