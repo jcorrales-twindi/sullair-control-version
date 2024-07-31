@@ -331,9 +331,9 @@
                   } ],
                   "useCustomIcon" : false,
                   "useGetValueFunction" : true,
-                  "getValueFunctionBody" : "return value",
+                  "getValueFunctionBody" : "return value ? value: 'all'",
                   "useSetValueFunction" : true,
-                  "setValueFunctionBody" : "return value"
+                  "setValueFunctionBody" : "return value == 'all' ? null : value"
                 },
                 "_hash" : 0.44967691035128743,
                 "aggregationType" : null,
