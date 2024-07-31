@@ -534,9 +534,9 @@
               "entityAliasId" : "85aa3338-c76f-84e9-5f65-058cea332757",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "displayConstructionWork",
+                "name" : "displayConstructionSite",
                 "type" : "attribute",
-                "label" : "displayConstructionWork",
+                "label" : "displayConstructionSite",
                 "color" : "#2196f3",
                 "settings" : {
                   "dataKeyHidden" : false,
