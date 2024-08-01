@@ -136,7 +136,7 @@
             "showTitleIcon" : false,
             "dropShadow" : true,
             "enableFullscreen" : true,
-            "enableDataExport" : false,
+            "enableDataExport" : true,
             "widgetStyle" : {
               "borderRadius" : ".75rem"
             },
