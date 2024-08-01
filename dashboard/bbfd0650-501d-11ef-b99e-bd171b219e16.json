@@ -1814,19 +1814,6 @@
               "entityAliasId" : "6cc30c8f-01d7-835c-9a45-25d0198ec8d1",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "CumulativeOperatingHours",
-                "type" : "timeseries",
-                "label" : "Horometro",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.5495168734754283,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
                 "name" : "Latitude",
                 "type" : "timeseries",
                 "label" : "Latitude",
