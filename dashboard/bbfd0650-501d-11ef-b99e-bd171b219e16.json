@@ -4095,9 +4095,9 @@
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "Sullair app (Admin)",
+    "name" : "Sullair app (Clientes)",
     "ownerId" : null,
-    "title" : "Sullair app (Admin)"
+    "title" : "Sullair app (Clientes)"
   },
   "attributes" : {
     "SERVER_SCOPE" : [ ]
