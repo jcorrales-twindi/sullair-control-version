@@ -233,9 +233,9 @@
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "Reporte de uso sin filtros",
+    "name" : "Reporte de uso",
     "ownerId" : null,
-    "title" : "Reporte de uso sin filtros"
+    "title" : "Reporte de uso"
   },
   "attributes" : {
     "SERVER_SCOPE" : [ ]
