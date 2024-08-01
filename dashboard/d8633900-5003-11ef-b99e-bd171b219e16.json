@@ -159,7 +159,7 @@
       },
       "states" : {
         "default" : {
-          "name" : "Reporte de uso sin filtros",
+          "name" : "Reporte de uso simple",
           "root" : true,
           "layouts" : {
             "main" : {
