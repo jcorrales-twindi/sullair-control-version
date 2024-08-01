@@ -1,0 +1,24 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : ""
+    },
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "d8633900-5003-11ef-b99e-bd171b219e16"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "Reporte de uso sin filtros",
+    "ownerId" : null,
+    "title" : "Reporte de uso sin filtros"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
