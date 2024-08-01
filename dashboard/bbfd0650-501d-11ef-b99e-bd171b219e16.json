@@ -3501,19 +3501,10 @@
           "id" : "76a00318-874f-227a-cd4b-d81a7f8f1a6c",
           "alias" : "Hierarchy",
           "filter" : {
-            "type" : "relationsQuery",
+            "type" : "assetType",
             "resolveMultiple" : true,
-            "rootStateEntity" : false,
-            "stateEntityParamName" : null,
-            "defaultStateEntity" : null,
-            "rootEntity" : {
-              "entityType" : "TENANT",
-              "id" : "7f7de250-2fb0-11ee-bf45-a1705d89a055"
-            },
-            "direction" : "FROM",
-            "maxLevel" : 1,
-            "fetchLastLevelOnly" : false,
-            "filters" : [ ]
+            "assetTypes" : [ "fleet-root" ],
+            "assetNameFilter" : ""
           }
         },
         "741f1e9c-6259-607c-2b24-c272575d286b" : {
