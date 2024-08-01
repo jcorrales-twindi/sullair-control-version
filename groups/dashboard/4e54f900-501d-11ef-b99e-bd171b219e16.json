@@ -24,7 +24,7 @@
       "entityType" : "ENTITY_GROUP",
       "id" : "4e54f900-501d-11ef-b99e-bd171b219e16"
     },
-    "name" : "Dashboards para clientes",
+    "name" : "Dashboards para Clientes",
     "ownerId" : {
       "entityType" : "TENANT",
       "id" : "7f7de250-2fb0-11ee-bf45-a1705d89a055"
