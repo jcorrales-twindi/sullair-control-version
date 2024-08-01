@@ -141,7 +141,7 @@
               "borderRadius" : ".75rem"
             },
             "widgetCss" : "",
-            "pageSize" : 1024,
+            "pageSize" : 2500,
             "noDataDisplayMessage" : "",
             "showLegend" : false,
             "titleTooltip" : "",
