@@ -570,8 +570,13 @@
             "showLegend" : false,
             "datasources" : [ ],
             "enableDataExport" : true,
-            "widgetStyle" : { },
-            "actions" : { }
+            "widgetStyle" : {
+              "borderRadius" : ".75rem"
+            },
+            "actions" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
