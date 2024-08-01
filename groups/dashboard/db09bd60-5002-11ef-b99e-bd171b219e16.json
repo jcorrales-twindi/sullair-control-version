@@ -24,7 +24,7 @@
       "entityType" : "ENTITY_GROUP",
       "id" : "db09bd60-5002-11ef-b99e-bd171b219e16"
     },
-    "name" : "Principales",
+    "name" : "Dashboards para Sullair",
     "ownerId" : {
       "entityType" : "TENANT",
       "id" : "7f7de250-2fb0-11ee-bf45-a1705d89a055"
