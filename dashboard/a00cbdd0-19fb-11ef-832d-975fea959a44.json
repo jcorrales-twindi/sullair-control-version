@@ -570,9 +570,9 @@
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "Reporte de uso",
+    "name" : "Reporte de uso con filtro",
     "ownerId" : null,
-    "title" : "Reporte de uso"
+    "title" : "Reporte de uso con filtro"
   },
   "attributes" : {
     "SERVER_SCOPE" : [ ]
