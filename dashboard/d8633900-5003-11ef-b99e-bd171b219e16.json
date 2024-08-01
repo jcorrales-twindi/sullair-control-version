@@ -3,7 +3,236 @@
   "entity" : {
     "assignedCustomers" : null,
     "configuration" : {
-      "description" : ""
+      "description" : "",
+      "widgets" : {
+        "6b017d4d-57ff-3d15-7531-7623e15ccf2a" : {
+          "isSystemType" : true,
+          "bundleAlias" : "rds_widget_collection",
+          "typeAlias" : "report_stepper2",
+          "type" : "timeseries",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 13,
+          "sizeY" : 8.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "cf57e3a1-3db6-fabf-3df5-8b2e7aa715fd",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "CumulativeOperatingHours",
+                "type" : "timeseries",
+                "label" : "CumulativeOperatingHours",
+                "color" : "#2196f3",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "let accData\r\ntry {\r\n    const dataUtilization = ctx.data.find(({datasource,dataKey}) => {\r\n            return datasource.entityId == entity.id.id&&dataKey.name=='CumulativeOperatingHours'\r\n        })\r\n    if (!dataUtilization.data.length) return value;\r\n    const firtsValue = dataUtilization.data[0][1]\r\n    const secondValue = dataUtilization.data[dataUtilization.data.length - 1][1]\r\n    console.log(\"Data=>\",secondValue, firtsValue, dataUtilization.data)\r\n    return convertMsToHM((secondValue - firtsValue)*1000*60*60)\r\n    \r\n}catch(e){\r\n    console.log(\"ErrorCumulativeHours=>\",e)\r\n    return value\r\n}\r\n\r\n\r\nfunction padTo2Digits(num) {\r\n    return num.toString().padStart(2, '0');\r\n}\r\n\r\nfunction convertMsToHM(milliseconds) {\r\n    let seconds = Math.floor(milliseconds / 1000);\r\n    let minutes = Math.floor(seconds / 60);\r\n    let hours = Math.floor(minutes / 60);\r\n\r\n    seconds = seconds % 60;\r\n    // 👇️ if seconds are greater than 30, round minutes up (optional)\r\n    // minutes = seconds >= 30 ? minutes + 1 : minutes;\r\n\r\n    minutes = minutes % 60;\r\n\r\n    // 👇️ If you don't want to roll hours over, e.g. 24 to 00\r\n    // 👇️ comment (or remove) the line below\r\n    // commenting next line gets you `24:00:00` instead of `00:00:00`\r\n    // or `36:15:31` instead of `12:15:31`, etc.\r\n    \r\n    //   hours = hours % 24;\r\n\r\n    return `${padTo2Digits(hours)}:${padTo2Digits(minutes)}:${padTo2Digits(seconds)}`;\r\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.16195592619917476,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "Binary1QualifiedInput",
+                "type" : "timeseries",
+                "label" : "Binary1QualifiedInput",
+                "color" : "#4caf50",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "let accData\r\ntry {\r\n    // console.log(\"entity=>\", ctx,)\r\n\r\n    const dataUtilization = ctx.data.find(({datasource,dataKey}) => {\r\n            return datasource.entityId == entity.id.id&&dataKey.name=='Binary1QualifiedInput'\r\n        })\r\n    // console.log(\"dataUtilization=>\", dataUtilization)\r\n    if (!dataUtilization.data.length) return value;\r\n\r\n    const lengtData = dataUtilization.data.length;\r\n    // console.log(\"DateFirts&End=>\", new Date(dataUtilization\r\n    //     .data[0][0]), new Date(dataUtilization.data[\r\n    //     lengtData - 1][0]))\r\n    accData = dataUtilization.data.reduce((acc, curr,\r\n        ind) => {\r\n        //firts call\r\n        if (ind == 0) {\r\n            // console.log(\"FirtsCall=>\", acc, curr,\r\n            //     ind)\r\n            return {\r\n                accHours: 0,\r\n                prevState: curr[1],\r\n                prevTime: curr[0]\r\n            }\r\n        }\r\n\r\n        //last call\r\n        if (ind == lengtData - 1) {\r\n            const accHours = acc.accHours + (acc\r\n                .prevState ? curr[0] - acc\r\n                .prevTime : 0)\r\n            return {\r\n                accHours: accHours,\r\n                prevState: curr[1],\r\n                prevTime: curr[0]\r\n            }\r\n        }\r\n\r\n        if (curr[1]) {\r\n            return {\r\n                accHours: acc.accHours,\r\n                prevState: curr[1],\r\n                prevTime: acc\r\n                .prevState ? acc\r\n                    .prevTime : curr[0]\r\n            }\r\n        }\r\n\r\n\r\n        const accHours = acc.accHours + (acc\r\n                .prevState ? curr[0] - acc\r\n            .prevTime : 0)\r\n        return {\r\n            accHours: accHours,\r\n            prevState: curr[1],\r\n            prevTime: curr[0]\r\n        }\r\n\r\n\r\n    }, {\r\n        accHours: 0,\r\n        prevState: false,\r\n        prevTime: 0\r\n    })\r\n    return accData ? convertMsToHM(accData.accHours) : value\r\n    /* code */\r\n} catch (e) {\r\n    console.log(\"ErrorAll=>\", e)\r\n    return value\r\n}\r\n\r\nfunction padTo2Digits(num) {\r\n    return num.toString().padStart(2, '0');\r\n}\r\n\r\nfunction convertMsToHM(milliseconds) {\r\n    let seconds = Math.floor(milliseconds / 1000);\r\n    let minutes = Math.floor(seconds / 60);\r\n    let hours = Math.floor(minutes / 60);\r\n\r\n    seconds = seconds % 60;\r\n    // 👇️ if seconds are greater than 30, round minutes up (optional)\r\n    // minutes = seconds >= 30 ? minutes + 1 : minutes;\r\n\r\n    minutes = minutes % 60;\r\n\r\n    // 👇️ If you don't want to roll hours over, e.g. 24 to 00\r\n    // 👇️ comment (or remove) the line below\r\n    // commenting next line gets you `24:00:00` instead of `00:00:00`\r\n    // or `36:15:31` instead of `12:15:31`, etc.\r\n    \r\n    //   hours = hours % 24;\r\n\r\n    return `${padTo2Digits(hours)}:${padTo2Digits(minutes)}:${padTo2Digits(seconds)}`;\r\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.918801119161798,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "Horas",
+                "type" : "timeseries",
+                "label" : "Horas",
+                "color" : "#f44336",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "let accData\r\ntry {\r\n    const dataUtilization = ctx.data.find(({datasource,dataKey,data}) => {\r\n            return datasource.entityId == entity.id.id&&data.length\r\n        })\r\n    if (!dataUtilization.data.length) return value;\r\n    \r\n    const isCumulative = dataUtilization.dataKey.name =='CumulativeOperatingHours'\r\n    if(isCumulative){\r\n    const firtsValue = dataUtilization.data[0][1]\r\n    const secondValue = dataUtilization.data[dataUtilization.data.length - 1][1]\r\n    // console.log(\"Data=>\",secondValue, firtsValue, dataUtilization.data)\r\n    return convertMsToHM((secondValue - firtsValue)*1000*60*60)\r\n    }\r\n    \r\n    const lengtData = dataUtilization.data.length;\r\n    // console.log(\"DateFirts&End=>\", new Date(dataUtilization\r\n    //     .data[0][0]), new Date(dataUtilization.data[\r\n    //     lengtData - 1][0]))\r\n    accData = dataUtilization.data.reduce((acc, curr,\r\n        ind) => {\r\n        //firts call\r\n        if (ind == 0) {\r\n            // console.log(\"FirtsCall=>\", acc, curr,\r\n            //     ind)\r\n            return {\r\n                accHours: 0,\r\n                prevState: curr[1],\r\n                prevTime: curr[0]\r\n            }\r\n        }\r\n\r\n        //last call\r\n        if (ind == lengtData - 1) {\r\n            const accHours = acc.accHours + (acc\r\n                .prevState ? curr[0] - acc\r\n                .prevTime : 0)\r\n            return {\r\n                accHours: accHours,\r\n                prevState: curr[1],\r\n                prevTime: curr[0]\r\n            }\r\n        }\r\n\r\n        if (curr[1]) {\r\n            return {\r\n                accHours: acc.accHours,\r\n                prevState: curr[1],\r\n                prevTime: acc\r\n                .prevState ? acc\r\n                    .prevTime : curr[0]\r\n            }\r\n        }\r\n\r\n\r\n        const accHours = acc.accHours + (acc\r\n                .prevState ? curr[0] - acc\r\n            .prevTime : 0)\r\n        return {\r\n            accHours: accHours,\r\n            prevState: curr[1],\r\n            prevTime: curr[0]\r\n        }\r\n\r\n\r\n    }, {\r\n        accHours: 0,\r\n        prevState: false,\r\n        prevTime: 0\r\n    })\r\n    return accData ? convertMsToHM(accData.accHours) : value\r\n    \r\n}catch(e){\r\n    console.log(\"ErrorCumulativeHours=>\",e)\r\n    return value\r\n}\r\n\r\n\r\nfunction padTo2Digits(num) {\r\n    return num.toString().padStart(2, '0');\r\n}\r\n\r\nfunction convertMsToHM(milliseconds) {\r\n    let seconds = Math.floor(milliseconds / 1000);\r\n    let minutes = Math.floor(seconds / 60);\r\n    let hours = Math.floor(minutes / 60);\r\n\r\n    seconds = seconds % 60;\r\n    // 👇️ if seconds are greater than 30, round minutes up (optional)\r\n    // minutes = seconds >= 30 ? minutes + 1 : minutes;\r\n\r\n    minutes = minutes % 60;\r\n\r\n    // 👇️ If you don't want to roll hours over, e.g. 24 to 00\r\n    // 👇️ comment (or remove) the line below\r\n    // commenting next line gets you `24:00:00` instead of `00:00:00`\r\n    // or `36:15:31` instead of `12:15:31`, etc.\r\n    \r\n    //   hours = hours % 24;\r\n\r\n    return `${padTo2Digits(hours)}:${padTo2Digits(minutes)}:${padTo2Digits(seconds)}`;\r\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.5771323498212506,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 1,
+                "timewindowMs" : 60000,
+                "interval" : 600000,
+                "fixedTimewindow" : {
+                  "endTimeMs" : 1715309999999,
+                  "startTimeMs" : 1714705200000
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 10673
+              },
+              "timezone" : null
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : false,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : true,
+              "entityNameColumnTitle" : "Dispositivo",
+              "displayEntityLabel" : false,
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 30,
+              "defaultSortOrder" : "entityName",
+              "useRowStyleFunction" : false
+            },
+            "title" : "New TwinDimension Report stepper",
+            "showTitleIcon" : false,
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "enableDataExport" : false,
+            "widgetStyle" : {
+              "borderRadius" : ".75rem"
+            },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showLegend" : false,
+            "titleTooltip" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "6b017d4d-57ff-3d15-7531-7623e15ccf2a"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Reporte de uso sin filtros",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "6b017d4d-57ff-3d15-7531-7623e15ccf2a" : {
+                  "sizeX" : 24,
+                  "sizeY" : 12,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "cf57e3a1-3db6-fabf-3df5-8b2e7aa715fd" : {
+          "id" : "cf57e3a1-3db6-fabf-3df5-8b2e7aa715fd",
+          "alias" : "Devices",
+          "filter" : {
+            "type" : "entityType",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE"
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1722429913581,
+            "endTimeMs" : 1722516313581
+          },
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
     },
     "customerId" : null,
     "externalId" : null,
