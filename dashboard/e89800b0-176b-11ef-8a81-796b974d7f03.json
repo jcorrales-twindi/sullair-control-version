@@ -3636,8 +3636,8 @@
             "rootStateEntity" : true,
             "stateEntityParamName" : "data_map",
             "defaultStateEntity" : {
-              "entityType" : "ASSET",
-              "id" : "66c93d30-177d-11ef-8a81-796b974d7f03"
+              "entityType" : "CURRENT_USER",
+              "id" : "13814000-1dd2-11b2-8080-808080808080"
             },
             "rootEntity" : null,
             "direction" : "FROM",
