@@ -2440,9 +2440,15 @@
                 "name" : "FuelRemaining",
                 "type" : "timeseries",
                 "label" : "FuelRemaining",
-                "color" : "#f44336",
+                "color" : "#36F44B",
                 "settings" : { },
-                "_hash" : 0.573502638706763
+                "_hash" : 0.573502638706763,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
