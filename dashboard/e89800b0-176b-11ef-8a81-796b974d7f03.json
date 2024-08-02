@@ -3539,13 +3539,13 @@
               "widgets" : {
                 "45eae83c-0276-1612-2b51-5b753cdead41" : {
                   "sizeX" : 25,
-                  "sizeY" : 10,
-                  "row" : 11,
+                  "sizeY" : 6,
+                  "row" : 5,
                   "col" : 0
                 },
                 "c018ab1f-8d4d-6619-0430-b3b8ecab9832" : {
                   "sizeX" : 25,
-                  "sizeY" : 11,
+                  "sizeY" : 5,
                   "row" : 0,
                   "col" : 0
                 }
