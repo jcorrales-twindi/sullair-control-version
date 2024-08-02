@@ -3697,34 +3697,6 @@
             } ]
           }
         },
-        "c94e8b2a-109d-09c3-ac23-74fd1d407796" : {
-          "id" : "c94e8b2a-109d-09c3-ac23-74fd1d407796",
-          "alias" : "Hierarchy - NQN",
-          "filter" : {
-            "type" : "entityGroup",
-            "resolveMultiple" : true,
-            "groupStateEntity" : false,
-            "stateEntityParamName" : null,
-            "defaultStateGroupType" : null,
-            "defaultStateEntityGroup" : null,
-            "groupType" : "DEVICE",
-            "entityGroup" : "38e19990-bb79-11ee-bc30-01172cc92ac6"
-          }
-        },
-        "65043352-2f91-c5ad-db1f-ba0b3d988791" : {
-          "id" : "65043352-2f91-c5ad-db1f-ba0b3d988791",
-          "alias" : "Hierarchy - ALL",
-          "filter" : {
-            "type" : "entityGroup",
-            "resolveMultiple" : true,
-            "groupStateEntity" : false,
-            "stateEntityParamName" : null,
-            "defaultStateGroupType" : null,
-            "defaultStateEntityGroup" : null,
-            "groupType" : "DEVICE",
-            "entityGroup" : "5b9f5690-4c14-11ee-bf45-a1705d89a055"
-          }
-        },
         "7401cabf-4c5b-209f-2005-c1c486e3861a" : {
           "id" : "7401cabf-4c5b-209f-2005-c1c486e3861a",
           "alias" : "report data",
@@ -3742,18 +3714,6 @@
             "maxLevel" : 4,
             "fetchLastLevelOnly" : false,
             "filters" : [ ]
-          }
-        },
-        "e05bfbaf-03ad-51a6-36c9-039f5a58be72" : {
-          "id" : "e05bfbaf-03ad-51a6-36c9-039f5a58be72",
-          "alias" : "Hierarchy test",
-          "filter" : {
-            "type" : "singleEntity",
-            "resolveMultiple" : false,
-            "singleEntity" : {
-              "entityType" : "TENANT",
-              "id" : "7f7de250-2fb0-11ee-bf45-a1705d89a055"
-            }
           }
         }
       },
