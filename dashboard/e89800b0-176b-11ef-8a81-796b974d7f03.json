@@ -3291,15 +3291,15 @@
             "main" : {
               "widgets" : {
                 "af660201-4530-a4c2-29d9-f81ea94f331e" : {
-                  "sizeX" : 24,
-                  "sizeY" : 24,
+                  "sizeX" : 40,
+                  "sizeY" : 40,
                   "row" : 0,
                   "col" : 0
                 }
               },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
-                "columns" : 24,
+                "columns" : 40,
                 "margin" : 0,
                 "outerMargin" : false,
                 "backgroundSizeMode" : "100%",
@@ -3449,18 +3449,18 @@
                 "954e4e7b-5605-94cf-fcb3-2fe51a5b6e36" : {
                   "sizeX" : 26,
                   "sizeY" : 14,
-                  "row" : 10,
+                  "row" : 11,
                   "col" : 0
                 },
                 "daca4f4d-fa6e-c376-a988-05cb822fcc1f" : {
                   "sizeX" : 26,
                   "sizeY" : 4,
-                  "row" : 6,
+                  "row" : 7,
                   "col" : 0
                 },
                 "234ee92b-317f-4aa6-0666-ece734898b21" : {
                   "sizeX" : 26,
-                  "sizeY" : 6,
+                  "sizeY" : 7,
                   "row" : 0,
                   "col" : 0
                 }
