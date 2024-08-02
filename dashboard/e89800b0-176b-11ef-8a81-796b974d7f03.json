@@ -2908,7 +2908,7 @@
               "type" : "entity",
               "name" : null,
               "entityAliasId" : "6cc30c8f-01d7-835c-9a45-25d0198ec8d1",
-              "filterId" : "2ee511d4-4bb1-9250-3c88-44f2accf70c6",
+              "filterId" : "e919afbe-e4d1-892f-a7ad-e1e983d33991",
               "dataKeys" : [ {
                 "name" : "Binary1QualifiedInput",
                 "type" : "timeseries",
@@ -3618,8 +3618,8 @@
             "stateEntityParamName" : null,
             "defaultStateEntity" : null,
             "rootEntity" : {
-              "entityType" : "TENANT",
-              "id" : "7f7de250-2fb0-11ee-bf45-a1705d89a055"
+              "entityType" : "CURRENT_USER",
+              "id" : "13814000-1dd2-11b2-8080-808080808080"
             },
             "direction" : "FROM",
             "maxLevel" : 1,
