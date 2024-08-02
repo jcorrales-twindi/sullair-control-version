@@ -3291,7 +3291,7 @@
               "widgets" : {
                 "954e4e7b-5605-94cf-fcb3-2fe51a5b6e36" : {
                   "sizeX" : 26,
-                  "sizeY" : 22,
+                  "sizeY" : 15,
                   "row" : 11,
                   "col" : 0
                 },
@@ -3376,13 +3376,13 @@
               "widgets" : {
                 "45eae83c-0276-1612-2b51-5b753cdead41" : {
                   "sizeX" : 25,
-                  "sizeY" : 10,
-                  "row" : 11,
+                  "sizeY" : 4,
+                  "row" : 3,
                   "col" : 0
                 },
                 "c018ab1f-8d4d-6619-0430-b3b8ecab9832" : {
                   "sizeX" : 25,
-                  "sizeY" : 11,
+                  "sizeY" : 3,
                   "row" : 0,
                   "col" : 0
                 }
