@@ -2424,18 +2424,25 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "cumulativeOperatingHours",
+                "name" : "CumulativeOperatingHours",
                 "type" : "timeseries",
                 "label" : "Horometro",
-                "color" : "#8bc34a",
+                "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.9558815081457177,
+                "_hash" : 0.8348996280557464,
                 "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
+              }, {
+                "name" : "FuelRemaining",
+                "type" : "timeseries",
+                "label" : "FuelRemaining",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.573502638706763
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
