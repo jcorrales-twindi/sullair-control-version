@@ -87,7 +87,21 @@
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
-              }
+              },
+              "latestDataKeys" : [ {
+                "name" : "internalName",
+                "type" : "attribute",
+                "label" : "Nombre interno",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.7595692320528278,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ]
             } ],
             "timewindow" : {
               "hideInterval" : false,
