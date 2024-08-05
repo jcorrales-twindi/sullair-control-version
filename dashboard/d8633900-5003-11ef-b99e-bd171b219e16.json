@@ -93,7 +93,7 @@
                   "columnWidth" : "0px",
                   "useCellStyleFunction" : false,
                   "useCellContentFunction" : true,
-                  "cellContentFunction" : "console.log(\"InternalName=>\", value,  entity, ctx)\n\nreturn value",
+                  "cellContentFunction" : "\ntry {\n    /* code */\n    const internalName = ctx.data.find(({datasource,dataKey}) => {\n            return datasource.entityId == entity.id.id&&dataKey.name=='internalName'\n        })\n        \n    return internalName ? internalName[1]: ''\n} catch (e) {\n    console.log(\"ErrorInternalName=>\", value,  entity, ctx)\n    return value\n}",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled",
                   "columnExportOption" : "onlyVisible"
