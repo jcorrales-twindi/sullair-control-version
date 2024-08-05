@@ -51,7 +51,7 @@
                   "columnWidth" : "0px",
                   "useCellStyleFunction" : false,
                   "useCellContentFunction" : true,
-                  "cellContentFunction" : "try {\n    /* code */\n    const dataImg = ctx.latestData.find(({datasource,dataKey}) => {\n            return datasource.entityId == entity.id.id&&dataKey.name=='img'\n        })\n    \n    if(!dataImg&&!dataImg.data[0][1])return value\n        \n    const objectValue = isJson(dataImg.data[0][1]) ? JSON.parse(dataImg.data[0][1]) : value \n\n    const {name, src, title} = objectValue\n\n    return objectValue ? `<img mat-raised-button src=${src} alt=${name?name:'name'} width=\"28\" title=${title?title:'Imagen'} >`:value\n    return value\n} catch (e) {\n    console.log(\"ErrorImg=>\",e)\n    return value\n}\n\n\nfunction isJson(text){\n  try {\n    JSON.parse(text);\n  } catch (err) {\n    return false;\n  }\n  return true;\n}",
+                  "cellContentFunction" : "try {\n    /* code */\n    const dataImg = ctx.latestData.find(({datasource,dataKey}) => {\n            return datasource.entityId == entity.id.id&&dataKey.name=='img'\n        })\n    \n    if(!dataImg&&!dataImg.data[0][1])return value\n        \n    const objectValue = isJson(dataImg.data[0][1]) ? JSON.parse(dataImg.data[0][1]) : value \n\n    const {name, src, title} = objectValue\n\n    return objectValue ? `<img mat-raised-button src=${src} alt=${name?name:'name'} width=\"38\" title=${title?title:'Imagen'} >`:value\n    return value\n} catch (e) {\n    console.log(\"ErrorImg=>\",e)\n    return value\n}\n\n\nfunction isJson(text){\n  try {\n    JSON.parse(text);\n  } catch (err) {\n    return false;\n  }\n  return true;\n}",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled",
                   "columnExportOption" : "onlyVisible"
@@ -129,37 +129,7 @@
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
-              },
-              "latestDataKeys" : [ {
-                "name" : "internalName",
-                "type" : "attribute",
-                "label" : "internalName",
-                "color" : "#ffc107",
-                "settings" : {
-                  "customTitle" : "Nombre interno",
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : true,
-                  "cellContentFunction" : "return value",
-                  "defaultColumnVisibility" : "visible",
-                  "columnSelectionToDisplay" : "enabled",
-                  "columnExportOption" : "onlyVisible"
-                },
-                "_hash" : 0.7595692320528278,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "img",
-                "type" : "attribute",
-                "label" : "img",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.35339560579235196
-              } ]
+              }
             } ],
             "timewindow" : {
               "hideInterval" : false,
