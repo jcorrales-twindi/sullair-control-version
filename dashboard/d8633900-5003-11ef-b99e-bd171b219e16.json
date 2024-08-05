@@ -22,6 +22,48 @@
               "entityAliasId" : "cf57e3a1-3db6-fabf-3df5-8b2e7aa715fd",
               "filterId" : null,
               "dataKeys" : [ {
+                "name" : "InternalName",
+                "type" : "timeseries",
+                "label" : "Nombre interno",
+                "color" : "#607d8b",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "try {\n    /* code */\n    const internalName = ctx.latestData.find(({datasource,dataKey}) => {\n            return datasource.entityId == entity.id.id&&dataKey.name=='internalName'\n        })\n    return internalName ? internalName.data[0][1] : ''\n} catch (e) {\n    console.log(\"ErrorInternalName=>\", e)\n    return value\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.7788296762548226,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "Img",
+                "type" : "timeseries",
+                "label" : "Imagen",
+                "color" : "#8bc34a",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "try {\n    /* code */\n    const dataImg = ctx.latestData.find(({datasource,dataKey}) => {\n            return datasource.entityId == entity.id.id&&dataKey.name=='img'\n        })\n    \n    if(!dataImg&&!dataImg.data[0][1])return value\n        \n    const objectValue = isJson(dataImg.data[0][1]) ? JSON.parse(dataImg.data[0][1]) : value \n\n    const {name, src, title} = objectValue\n\n    return objectValue ? `<img mat-raised-button src=${src} alt=${name?name:'name'} width=\"28\" title=${title?title:'Imagen'} >`:value\n    return value\n} catch (e) {\n    console.log(\"ErrorImg=>\",e)\n    return value\n}\n\n\nfunction isJson(text){\n  try {\n    JSON.parse(text);\n  } catch (err) {\n    return false;\n  }\n  return true;\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.4140605409059408,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
                 "name" : "CumulativeOperatingHours",
                 "type" : "timeseries",
                 "label" : "CumulativeOperatingHours",
@@ -78,48 +120,6 @@
                   "columnExportOption" : "onlyVisible"
                 },
                 "_hash" : 0.5771323498212506,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "InternalName",
-                "type" : "timeseries",
-                "label" : "Nombre interno",
-                "color" : "#607d8b",
-                "settings" : {
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : true,
-                  "cellContentFunction" : "try {\n    /* code */\n    const internalName = ctx.latestData.find(({datasource,dataKey}) => {\n            return datasource.entityId == entity.id.id&&dataKey.name=='internalName'\n        })\n    return internalName ? internalName.data[0][1] : ''\n} catch (e) {\n    console.log(\"ErrorInternalName=>\", e)\n    return value\n}",
-                  "defaultColumnVisibility" : "visible",
-                  "columnSelectionToDisplay" : "enabled",
-                  "columnExportOption" : "onlyVisible"
-                },
-                "_hash" : 0.7788296762548226,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "Img",
-                "type" : "timeseries",
-                "label" : "Imagen",
-                "color" : "#8bc34a",
-                "settings" : {
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : true,
-                  "cellContentFunction" : "try {\n    /* code */\n    const dataImg = ctx.latestData.find(({datasource,dataKey}) => {\n            return datasource.entityId == entity.id.id&&dataKey.name=='img'\n        })\n    \n    if(!dataImg&&!dataImg.data[0][1])return value\n        \n    const objectValue = isJson(dataImg.data[0][1]) ? JSON.parse(dataImg.data[0][1]) : value \n\n    const {name, src, title} = objectValue\n\n    return objectValue ? `<img mat-raised-button src=${src} alt=${name?name:'name'} width=\"28\" title=${title?title:'Imagen'} >`:value\n    return value\n} catch (e) {\n    console.log(\"ErrorImg=>\",e)\n    return value\n}\n\n\nfunction isJson(text){\n  try {\n    JSON.parse(text);\n  } catch (err) {\n    return false;\n  }\n  return true;\n}",
-                  "defaultColumnVisibility" : "visible",
-                  "columnSelectionToDisplay" : "enabled",
-                  "columnExportOption" : "onlyVisible"
-                },
-                "_hash" : 0.4140605409059408,
                 "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
