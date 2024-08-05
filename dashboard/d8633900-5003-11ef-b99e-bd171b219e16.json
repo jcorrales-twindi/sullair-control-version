@@ -112,7 +112,7 @@
               "latestDataKeys" : [ {
                 "name" : "internalName",
                 "type" : "attribute",
-                "label" : "Nombre interno",
+                "label" : "internalName",
                 "color" : "#ffc107",
                 "settings" : {
                   "customTitle" : "Nombre interno",
