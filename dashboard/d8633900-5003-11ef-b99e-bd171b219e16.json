@@ -222,18 +222,22 @@
             "main" : {
               "widgets" : {
                 "6b017d4d-57ff-3d15-7531-7623e15ccf2a" : {
-                  "sizeX" : 24,
-                  "sizeY" : 11,
+                  "sizeX" : 40,
+                  "sizeY" : 22,
                   "row" : 0,
                   "col" : 0
                 }
               },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
-                "columns" : 24,
+                "columns" : 40,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : false,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
