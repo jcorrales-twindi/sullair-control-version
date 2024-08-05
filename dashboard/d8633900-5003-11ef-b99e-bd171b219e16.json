@@ -93,7 +93,16 @@
                 "type" : "attribute",
                 "label" : "Nombre interno",
                 "color" : "#ffc107",
-                "settings" : { },
+                "settings" : {
+                  "customTitle" : "Nombre interno",
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "return value",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
                 "_hash" : 0.7595692320528278,
                 "aggregationType" : null,
                 "units" : null,
@@ -133,7 +142,7 @@
             "padding" : "8px",
             "settings" : {
               "enableSearch" : true,
-              "enableSelectColumnDisplay" : false,
+              "enableSelectColumnDisplay" : true,
               "enableStickyHeader" : true,
               "enableStickyAction" : true,
               "reserveSpaceForHiddenAction" : "true",
