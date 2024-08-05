@@ -129,7 +129,22 @@
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
-              }
+              },
+              "latestDataKeys" : [ {
+                "name" : "img",
+                "type" : "attribute",
+                "label" : "img",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.829924791079865
+              }, {
+                "name" : "internalName",
+                "type" : "attribute",
+                "label" : "internalName",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.7425000002795943
+              } ]
             } ],
             "timewindow" : {
               "hideInterval" : false,
