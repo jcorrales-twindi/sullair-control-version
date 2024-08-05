@@ -54,7 +54,7 @@
                   "cellContentFunction" : "try {\n    /* code */\n    const dataImg = ctx.latestData.find(({datasource,dataKey}) => {\n            return datasource.entityId == entity.id.id&&dataKey.name=='img'\n        })\n    \n    if(!dataImg&&!dataImg.data[0][1])return value\n        \n    const objectValue = isJson(dataImg.data[0][1]) ? JSON.parse(dataImg.data[0][1]) : value \n\n    const {name, src, title} = objectValue\n\n    return objectValue ? `<img mat-raised-button src=${src} alt=${name?name:'name'} width=\"38\" title=${title?title:'Imagen'} >`:value\n    return value\n} catch (e) {\n    console.log(\"ErrorImg=>\",e)\n    return value\n}\n\n\nfunction isJson(text){\n  try {\n    JSON.parse(text);\n  } catch (err) {\n    return false;\n  }\n  return true;\n}",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled",
-                  "columnExportOption" : "onlyVisible"
+                  "columnExportOption" : "never"
                 },
                 "_hash" : 0.4140605409059408,
                 "aggregationType" : null,
