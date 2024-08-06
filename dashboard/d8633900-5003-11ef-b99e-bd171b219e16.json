@@ -43,6 +43,27 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
+                "name" : "Type",
+                "type" : "timeseries",
+                "label" : "Type",
+                "color" : "#03a9f4",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "try {\n    /* code */\n    const Type = ctx.latestData.find(({datasource, dataKey}) => {\n        return datasource.entityId == entity.id.id && dataKey.name=='type'\n    })\n    return Type ? Type.data[0][1] : ''\n} catch (e) {\n    console.log(\"ErrorInternalName=>\", e)\n    return value\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.18633501807164166,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
                 "name" : "Img",
                 "type" : "timeseries",
                 "label" : "Imagen",
@@ -120,27 +141,6 @@
                   "columnExportOption" : "onlyVisible"
                 },
                 "_hash" : 0.5771323498212506,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "Type",
-                "type" : "timeseries",
-                "label" : "Type",
-                "color" : "#03a9f4",
-                "settings" : {
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : true,
-                  "cellContentFunction" : "try {\n    /* code */\n    const Type = ctx.latestData.find(({datasource, dataKey}) => {\n        return datasource.entityId == entity.id.id && dataKey.name=='type'\n    })\n    return Type ? Type.data[0][1] : ''\n} catch (e) {\n    console.log(\"ErrorInternalName=>\", e)\n    return value\n}",
-                  "defaultColumnVisibility" : "visible",
-                  "columnSelectionToDisplay" : "enabled",
-                  "columnExportOption" : "onlyVisible"
-                },
-                "_hash" : 0.18633501807164166,
                 "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
