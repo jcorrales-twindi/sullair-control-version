@@ -85,6 +85,48 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
+                "name" : "DataOrigin",
+                "type" : "timeseries",
+                "label" : "DataOrigin",
+                "color" : "#ff9800",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "try {\n    /* code */\n    const DataOrigin = ctx.latestData.find(({datasource, dataKey}) => {\n        return datasource.entityId == entity.id.id && dataKey.name=='DataOrigin'\n    })\n    return DataOrigin ? DataOrigin.data[0][1] : ''\n} catch (e) {\n    console.log(\"ErrorInternalName=>\", e)\n    return value\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.5301326603273748,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "Model",
+                "type" : "timeseries",
+                "label" : "Model",
+                "color" : "#673ab7",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "try {\n    /* code */\n    const Model = ctx.latestData.find(({datasource, dataKey}) => {\n        return datasource.entityId == entity.id.id && dataKey.name=='model'\n    })\n    return Model ? Model.data[0][1] : ''\n} catch (e) {\n    console.log(\"ErrorInternalName=>\", e)\n    return value\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.8050834430284519,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
                 "name" : "CumulativeOperatingHours",
                 "type" : "timeseries",
                 "label" : "CumulativeOperatingHours",
@@ -141,27 +183,6 @@
                   "columnExportOption" : "onlyVisible"
                 },
                 "_hash" : 0.5771323498212506,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "DataOrigin",
-                "type" : "timeseries",
-                "label" : "DataOrigin",
-                "color" : "#ff9800",
-                "settings" : {
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : true,
-                  "cellContentFunction" : "try {\n    /* code */\n    const DataOrigin = ctx.latestData.find(({datasource, dataKey}) => {\n        return datasource.entityId == entity.id.id && dataKey.name=='dataOrigin'\n    })\n    return DataOrigin ? DataOrigin.data[0][1] : ''\n} catch (e) {\n    console.log(\"ErrorInternalName=>\", e)\n    return value\n}",
-                  "defaultColumnVisibility" : "visible",
-                  "columnSelectionToDisplay" : "enabled",
-                  "columnExportOption" : "onlyVisible"
-                },
-                "_hash" : 0.5301326603273748,
                 "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
