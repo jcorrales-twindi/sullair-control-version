@@ -126,6 +126,27 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
+              }, {
+                "name" : "Type",
+                "type" : "timeseries",
+                "label" : "Type",
+                "color" : "#03a9f4",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "try {\n    /* code */\n    const Type = ctx.latestData.find(({datasource, dataKey}) => {\n        return datasource.entityId == entity.id.id && dataKey.name=='type'\n    })\n    return Type ? Type.data[0][1] : ''\n} catch (e) {\n    console.log(\"ErrorInternalName=>\", e)\n    return value\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.18633501807164166,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -144,6 +165,39 @@
                 "color" : "#8bc34a",
                 "settings" : { },
                 "_hash" : 0.7425000002795943
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "type",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.038546902171558095,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "DataOrigin",
+                "type" : "attribute",
+                "label" : "dataOrigin",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.21531117734758465,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "model",
+                "type" : "attribute",
+                "label" : "model",
+                "color" : "#ffeb3b",
+                "settings" : { },
+                "_hash" : 0.45689264415411235
               } ]
             } ],
             "timewindow" : {
@@ -189,7 +243,7 @@
               "defaultSortOrder" : "entityName",
               "useRowStyleFunction" : false
             },
-            "title" : "New TwinDimension Report stepper",
+            "title" : "TwinDimension Hours Report",
             "showTitleIcon" : false,
             "dropShadow" : true,
             "enableFullscreen" : true,
