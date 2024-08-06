@@ -147,6 +147,27 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
+              }, {
+                "name" : "DataOrigin",
+                "type" : "timeseries",
+                "label" : "DataOrigin",
+                "color" : "#ff9800",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "try {\n    /* code */\n    const DataOrigin = ctx.latestData.find(({datasource, dataKey}) => {\n        return datasource.entityId == entity.id.id && dataKey.name=='dataOrigin'\n    })\n    return DataOrigin ? DataOrigin.data[0][1] : ''\n} catch (e) {\n    console.log(\"ErrorInternalName=>\", e)\n    return value\n}",
+                  "defaultColumnVisibility" : "visible",
+                  "columnSelectionToDisplay" : "enabled",
+                  "columnExportOption" : "onlyVisible"
+                },
+                "_hash" : 0.5301326603273748,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
